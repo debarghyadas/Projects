@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Neva Ventures">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <title>Easy Park</title>
+      <link rel="stylesheet" type="text/css" href="styles/css/profile.css">
+      <link rel="stylesheet" type="text/css" href="styles/css/sweet-alert.css">
+      <link rel="stylesheet" type="text/css" href="styles/css/loading-bar.min.css">
+      <link rel="stylesheet" href="styles/css/normalize.min.css">
+      <link rel="stylesheet" href="styles/css/animate.min.css">
+      <!--common-part-->
+      <link rel="stylesheet" type="text/css" href="styles/css/common.css">
+      <script type="text/javascript" src="app/common.js"></script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <!--common-part-->
+      
+      
+   </head>
+   <body ng-controller="ProfileController">
+      <!-- Header Start -->
+      <div class="innerHeader">
+         <div class="main">
+            <div ng-include="'templates/header-inner.html'" scope="" onload=""></div>
+            <div class="google-translator-container">
+               <div class="googleTranslate">
+                  <div id="google_translate_element"></div>
+               </div>
+            </div>
+            <div class="clear">
+            </div>
+         </div>
+      </div>
+      <!-- Header End -->
+      <!-- Payment Start -->
+      <div class="main">
+         <div class="paymentMethod">
+            <div class="left">
+               <div class="editImage">
+                  
+                  <div class="editIcon">
+                     <a href="#animatedModal" id="modal01" ng-click="openmodal=true"><img src="assets/images/edit-profile.png"></a>
+                  </div>
+                  <div class="profile-image">
+                     <div class="profile-image-thumb">
+                        <img src="assets/images/profile-pic.png" id="profile-pic">
+                     </div>
+                  </div>
+                  <div class="TextEdit" ng-show="!editMode">
+                     <h1 class="nospace" ng-bind="userdata.firstname + ' ' +userdata.lastname"></h1>
+                     <p class="nospace" ng-bind="userdata.email"></p>
+                     <h2 class="nospace" ng-bind="userdata.primaryPhone"></h2>
+                  </div>
+                  <!-- <div class="edit-profile hide" ng-class="{ 'hide' : !editMode,'' : editMode}">
+                     <input type="file"  name="profile_pic" onchange="angular.element(this).scope().imageUpload(this.files)"/>
+                     <input type="text" name="firstName" ng-model="userdata.firstname" required="">
+                     <input type="text" name="lastName" ng-model="userdata.lastname" required="">
+                     <input type="email" name="email" ng-model="userdata.email" required="">
+                     <input type="text" name="phone" ng-model="userdata.primaryPhone" required="">
+                     <input type="submit" name="submit_profile" value="Save">
+                  </div> -->
+               </div>
+               <div class="downloadSticker">download sticker <img src="assets/images/download-icon.png"></div>
+            </div>
+            <div class="right paymentOption">
+               <h1 class="nospace">Select a payment method
+               <a href="#"><img src="assets/images/arrow-left.png"></a></h1>
+               <div class="clear"></div>
+               <ul class="nospace">
+                  <li><input type="radio">Credit card
+                  <div class="paymentCard"><img src="assets/images/payment-cards.png"></div></li>
+                  <li><input type="radio">Net Banking
+                  <div class="chooseBank"><select>
+                     <option>Choose a Bank</option>
+                     <option>Swedan Bank</option>
+                  </select></div></li>
+                  
+                  <li><input type="radio">Debit card
+                  <div class="chooseBank"><select>
+                     <option>Choose a Bank</option>
+                     <option>Swedan Bank</option>
+                  </select></div></li>
+                  <li><input type="radio"><img src="assets/images/paypal-icon.png">
+                  <div class="paypalLogin"><select>
+                     <option>Login to Paypal</option>
+                     <option>Swedan Bank</option>
+                  </select></div></li>
+                  <div class="clear"></div>
+               </ul>
+               <h1 class="nospace">VEHICLE DETAILS </h1>
+               <div class="addCarButton">
+                  <div class="addToCart left"><input type="submit" value="ADD CAR"></div>
+               </div>
+            </div>
+            <div class="clear"></div>
+         </div>
+      </div>
+      <!--DEMO01-->
+      <div id="animatedModal" class="hide" ng-class="{'':openmodal,hide:!openmodal}">
+         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+         <!--  <div  id="btn-close-modal" >
+            CLOSE MODAL
+         </div> -->
+         
+         <div class="modal-content ">
+            <!--Your modal content goes here-->
+            
+            <!-- Payment Start -->
+            <div class="main">
+               <div class="userProfile">
+                  <div class="right close-animatedModal" ><img src="assets/images/cross.png"></div>
+                  <div class="clear"></div>
+                  <div class="left uploadImage">
+                     <img src="assets/images/user-image.png">
+                     <div class="profilePic">
+                        <img src="assets/images/edit-image.png"> Update profile picture
+                     </div>
+                  </div>
+                  <div class="right profileText">
+                     <table border="0" cellspacing="0" cellpadding="0">
+                        <form class="edit-profile-form" ng-submit="upload(profile_form)" name="profile_form">
+                           <tr>
+                              <td>First Name</td>
+                              <td><input type="text" name="firstName" ng-model="userdata.firstname" required="" value="" placeholder="Enter first name"></td>
+                           </tr>
+                           <tr>
+                              <td>Last Name</td>
+                              <td><input type="text" name="lastName" ng-model="userdata.lastname" required="" placeholder="Enter last name"></td>
+                           </tr><tr>
+                           <td>Email</td>
+                           <td><input type="email" name="email" ng-model="userdata.email" required="" placeholder="Enter email"></td>
+                        </tr>
+                        <tr>
+                           <td>Phone</td>
+                           <td><input type="text" name="phone" ng-model="userdata.primaryPhone" required="" placeholder="Enter phone number"></td>
+                        </tr>
+                        <tr>
+                           <td>Password</td>
+                           <td><div class="passInput">
+                              <input type="{{ptype}}" ng-model="userdata.password"  value="" placeholder="*********">
+                              <a href="" ng-click="change_password_view_type()" > <img ng-src="{{default_png}}" src="assets/images/visible.png"></a>
+                           </div></td>
+                        </tr>
+                        <tr>
+                           <td>Billing Address</td>
+                           <td><textarea></textarea></td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" class="saveBtn"><input type="submit" value="save"></td>
+                        </tr>
+                     </form>
+                  </table>
+               </div>
+               <div class="clear">
+                  
+               </div>
+            </div>
+         </div>
+         <!-- Payment End -->
+         <!--Your modal content goes here-->
+      </div>
+   </div>
+   <!-- Payment End -->
+   <ng-include src="'templates/footer-inner.html'" scope="" onload=""></ng-include>
+   <script type="text/javascript" src="../vendor/requirejs/require.js" ></script>
+   <script type="text/javascript" src="app/config.js" ></script>
+   <script type="text/javascript" src="app/angular_modules/profile/profile-bootstrap.js"></script>
+</body>
+</html>

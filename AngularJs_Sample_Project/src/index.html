@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Neva Ventures">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <title>Easy Park</title>
+      <link rel="stylesheet" type="text/css" href="styles/css/style.css">
+      <link rel="stylesheet" type="text/css" href="styles/css/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="styles/css/sweet-alert.css">
+      <link rel="stylesheet" type="text/css" href="styles/css/loading-bar.min.css">
+      
+      <!--<link type="text/css" rel="stylesheet" href="styles/css/video-js.min.css" />-->
+      <link href="https://cdn.rawgit.com/videojs/video.js/v5.4.4/dist/video-js.css" rel="stylesheet">
+      <script src="app/Webjs/video.min.js" type="text/javascript"></script>
+      <script src="app/Webjs/Youtube.min.js" type="text/javascript"></script>
+      
+      <script type="text/javascript" src="../vendor/requirejs/require.js" data-main="app/config.js"></script>
+      
+      <script type="text/javascript">
+      (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setIdentity track validateCode".split(" "), 0);
+      // Note that this example is using the key in two places, here and below
+      
+      </script>
+      <!--common-part-->
+      <link rel="stylesheet" type="text/css" href="styles/css/common.css">
+      <script type="text/javascript" src="app/common.js"></script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <!--common-part-->
+      
+   </head>
+   <body ng-controller="DashboardController" ng-init="init();">
+       <!--Header Start--> 
+
+   <ng-view></ng-view>
+
+
+      <!--<div class="header">
+         <div class="video-bg">
+            <video autoplay ng-click="togglePause();" poster="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" class="video-js vjs-default-skin" controls preload="auto" id="bgvid"  height="800" data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "http://www.youtube.com/watch?v=ZAO_OAyhnd8"}] }' loop>
+               <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  
+            </video>
+            <span class="mutebutton" ng-click="turn_vol();"><img src="assets/images/volume_1.png" ng-src="{{mutebutton}}"></span>
+         </div>
+         
+         <div class="headerText">
+            <div class="main">
+               <div class="left logo">
+                  <img src="assets/images/logo.png">
+               </div>
+               <div class="right nav">
+                  <ul class="nospace">
+                     <li><a href="#">HELP</a></li>
+                     <li><a href="sign-in" ng-click="check_login_stat($event);">Sign in</a></li>
+                     <li><a href="sign-up" >SIGN UP</a></li>
+                     <li><a href="#">BUSINESS</a></li>
+                     <div class="clear"></div>
+                  </ul>
+               </div>
+               <div class="google-translator-container">
+                  <div class="googleTranslate">
+                     <div id="google_translate_element"></div>
+                  </div>
+               </div>
+               <div class="clear"></div>
+            </div>
+         </div>
+      </div>
+      <!-- Header End 
+      <!-- Banner Start 
+      <div class="bannerText">
+         <div class="main">
+            <h1 class="nospace">Park with efficiency</h1>
+            <p class="nospace savetime">Save time and money with EasyPark.</p>
+            <h2 class="nospace">SEK <span>125763</span></h2>
+            <p class="nospace totalSaved">total Cash SAVED</p>
+            <h3 class="nospace">12:05:15</h3>
+            <p class="nospace totalSaved">total TIME SAVED</p>
+         </div>
+      </div>
+      <!-- Banner End 
+      <!-- Map Start 
+      <div class="mapArea" id="map_canvas" style="width:auto; height:450px;">
+         <!--  <iframe src="" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Map End 
+      <!-- Find Parking Start 
+      <div class="choosePark">
+         <h1 class="nospace">CLICK. CHOOSE. PARK</h1>
+         <form>
+            <input type="submit" value="FIND parking" >
+         </form>
+      </div>
+      <!-- Find Parking End 
+      <!-- Text me App Start 
+      <div class="textMeApp">
+         <div class="main">
+            <div class="textArea">
+               <h1 class="nospace">Park when you need to WHERE EVER YOU ARE</h1>
+               <div class="Enterph">
+                  <form ng-submit='sendSms()'>
+                     <input type="Text" placeholder="enter your phone number" only-number ng-model='phone_number' class="enterNo" id="phn" >
+                     <input type="submit" disabled="" ng-disabled='false' value="Text ME THE APP" class="appText"  id="sms"/>
+                  </form>
+               </div>
+               <p class="nospace">You will receive a one time SMS to download the app. Your phone number will not be used for any other purposes.
+                  Standard text messaging and data charges apply.
+               </p>
+            </div>
+         </div>
+      </div>
+      <!-- Text me App End 
+      <!-- Testimonial Start 
+      <div class="testimonial">
+         <div class="main">
+            <div class="left testimonialLeft">
+               <div class="left general">
+                  <img src="assets/images/heart-icon.png">
+                  <p class="nospace">GENERAL SATISFACTION
+                  </p>
+                  <p class="nospace contentGeneral">90%</p>
+               </div>
+               <div class="right parkingSpot">
+                  <img src="assets/images/parking-spot-icon.png">
+                  <p class="nospace">PARKING SPOTS</p>
+                  <p class="nospace contentGeneral">1Million</p>
+               </div>
+               <div class="clear"></div>
+               <div class="serves">
+                  <img src="assets/images/serves.png">
+                  <p class="nospace">SERVES</p>
+                  <p class="nospace contentGeneral">2Million</p>
+               </div>
+            </div>
+            
+            <div class="right owlContent">
+               "I've worked with several parking <br>
+               platforms and can unequivocally say the easypark is <br> the best. Today, it is the only platform we execute<br> individual and business programs on.”
+               <div class="owlInner">
+                  <div class="left leftArrow"><img src="assets/images/left-arrow.png"></div>
+                  <div class="left innerContent">
+                     <img src="assets/images/testimonial.jpg">
+                     <h1 class="nospace">Olga Pavicevic </h1>
+                     <p class="nospace">Sweden</p>
+                  </div>
+                  <div class="left rightArrow"><img src="assets/images/right-arrow.png"></div>
+                  <div class="clear"></div>
+               </div>
+            </div>
+            
+            <div class="clear"></div>
+         </div>
+      </div>
+      <!-- Testimonial End 
+      <!-- Border Div Start 
+      <div class="borderBottom">
+      </div>
+      <!-- Border Div End 
+      <!-- Partner Div Start 
+      <div class="ourPartner">
+         <div class="smallMain">
+            <h1 class="nospace">Our Partners</h1>
+            <div class="partnerLogo">
+               <ul class="nospace">
+                  <li><img src="assets/images/car-go.jpg"></li>
+                  <li><img src="assets/images/volvo.jpg"></li>
+                  <li><img src="assets/images/bmw.jpg"></li>
+                  <li><img src="assets/images/diamler.jpg"></li>
+                  <div class="clear"></div>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- Partner Div End 
+      <div class="bottmNav">
+         <div class="smallMain">
+            <div class="search left">
+               <ng-include src="'templates/search-bar.html'" scope="" onload=""></ng-include>
+            </div>
+            <div class="right navLinks">
+               <ul class="nospace">
+                  <li><a href="">EMAIL US</a></li>
+                  <li><a href=""> CALL US</a></li>
+                  <li><a href="faqs">FAQs</a></li>
+                  <li><a href="terms"> T&Cs</a></li>
+                  <div class="clear"></div>
+               </ul>
+            </div>
+            <div class="clear"></div>
+         </div>
+      </div>
+      <div class="footer">
+         <div class="smallMain">
+            <div class="left copyRight">EasyPark © 2016</div>
+            <div class="right socialIcon">
+               <div  ng-include="'templates/socials.html'" ></div>
+            </div>
+            <div class="clear"></div>
+         </div>
+      </div>-->
+      <!--  <script src="../vendor/jquery/jquery.min.js"></script>
+      
+      <script src="app/Webjs/owl.carousel.js" type="text/javascript"></script>
+      <script src="app/Webjs/owl.carousel.min.js" type="text/javascript"></script>
+      
+      <script src="app/Webjs/Youtube.min.js" type="text/javascript"></script>-->
+      <!--<script src="https://cdn.rawgit.com/videojs/video.js/v5.4.4/dist/video.js" type="text/javascript"></script>-->
+      <script type="text/javascript" src="app/angular_modules/dashboard/dashboard-bootstrap.js"></script>
+   </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="Neva Ventures">
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+      <title>Easy Park</title>
+      <link rel="stylesheet" type="text/css" href="styles/css/sign-in.css">
+      <link rel="stylesheet" type="text/css" href="styles/css/intlTelInput.css">
+      <link rel="stylesheet" type="text/css" href="styles/css/sweet-alert.css">
+      <link rel="stylesheet" type="text/css" href="styles/css/loading-bar.min.css">
+      
+      <link rel="stylesheet" type="text/css" href="styles/css/common.css">
+      <script type="text/javascript" src="app/common.js"></script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <body ng-controller="SignupController">
+         <!-- Header Start -->
+         <div class="innerHeader">
+            <div class="main">
+               <div ng-include="'templates/header-inner.html'" scope="" onload=""></div>
+               <div class="google-translator-container">
+                  <div class="googleTranslate">
+                     <div id="google_translate_element"></div>
+                  </div>
+               </div>
+               <div class="clear">
+               </div>
+            </div>
+         </div>
+         <!-- Header End -->
+         <!-- Sign Up Start -->
+         <div class="main">
+            <div class="signUp">
+               <h1 class="nospace">Sign Up</h1>
+               <form ng-submit="signUp(signup_form)" novalidate="" name="signup_form">
+                  <table>
+                     <tr>
+                        <td>
+                           <input type="text" ng-model="user.fullName" name="fullName"  placeholder="Full Name" required="">
+                           <div ng-class="{'' : signup_form.$submitted , 'hide'  : !signup_form.$submitted}" class="hide" ng-messages="signup_form.fullName.$error">
+                              <p class="validation-error" ng-message="required">Fullname is required</p>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <input type="tel" class="phoneNumber" id="phoneNumber" name="phoneNumber" ng-model="user.phoneNumber" placeholder="Enter Number" required="" pattern="^\+?[0-9]{3}-?[0-9]{6,12}$">
+                           <div class="clear"></div>
+                           <div ng-class="{'' : signup_form.$submitted , 'hide'  : !signup_form.$submitted}" class="hide"  ng-messages="signup_form.phoneNumber.$error">
+                              <p class="validation-error phonenumber" ng-message="required">Phone no is required</p>
+                              <p class="validation-error phonenumber" ng-message="pattern">Please enter a valid phone number</p>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <input type="email" ng-model='user.email' required="" name="email" placeholder="Email">
+                           <div ng-class="{'' : signup_form.$submitted , 'hide'  : !signup_form.$submitted}" class="hide"  ng-messages="signup_form.email.$error">
+                              <p class="validation-error" ng-message="required">Email id is required</p>
+                              <p class="validation-error" ng-message="email">Must be a valid email id</p>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="passDiv">
+                              <input type="{{ptype}}" ng-model='user.password' name="password" required="" placeholder="Password" class="noBorder" ng-minlength="8">
+                              <a href="" ng-click="change_password_view_type()" > <img ng-src="{{default_png}}" src="assets/images/visible.png"></a>
+                              <div class="clear"></div>
+                           </div>
+                           <div ng-class="{'' : signup_form.$submitted , 'hide'  : !signup_form.$submitted}" class="hide"  ng-messages="signup_form.password.$error">
+                              <p class="validation-error password" ng-message="required">Password is required</p>
+                              <p class="validation-error password" ng-message="minlength">Password should not be less than 8 charecter</p>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td><input type="submit" value="Sign Up" class="signUpBtn"></td>
+                     </tr>
+                  </table>
+               </form>
+               <div class="agreement">
+                  By signing up, I agree to EasyPark’s <span><a href="terms"> Terms of Service, </a>
+                  <br><a href="">
+                     Payments Terms of Service, Privacy Policy</a></span> and <span><a href="">Refund Policy.</a></span>
+                  </div>
+               </div>
+               
+            </div>
+            
+            <script type="text/javascript">
+            
+            </script>
+            <!-- Sign Up Close -->
+            <ng-include src="'templates/footer-inner.html'" scope="" onload=""></ng-include>
+            <script type="text/javascript" src="../vendor/requirejs/require.js" ></script>
+            <script type="text/javascript" src="app/config.js" ></script>
+            <script type="text/javascript" src="app/angular_modules/signup/signup-bootstrap.js"></script>
+         </body>
+      </html>
