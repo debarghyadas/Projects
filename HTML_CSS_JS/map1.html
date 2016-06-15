@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Place Autocomplete Demo</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+
+  <style>
+    html, body, #map-canvas {
+      height: 100%;
+      margin: 0px;
+      padding: 0px
+    }
+    #pac-input {
+      background-color: #F3E2A9;
+      padding: 0 11px 0 13px;
+      width: 400px;
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 300;
+      text-overflow: ellipsis;
+    }
+    #pac-input:focus {
+      border-color: #F7D358;
+      margin-left: -1px;
+      padding-left: 14px;  /* Regular padding-left + 1. */
+      width: 401px;
+    }
+    .pac-container {
+      border-color: #F7D358;
+      background-color: #F3E2A9;
+    }
+  }
+  </style>
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+
+  <script>
+  function initialize() {
+    var mapOptions = {
+      center: new google.maps.LatLng(-33.8688, 151.2195),
+      zoom: 13
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+    // Set the default bounds for the autocomplete search results.
+    // This will bias the search results to Sydney, Australia. 
+    alert("00");
+    var infowindow1 = new google.maps.InfoWindow({
+	    content: "hello"
+});
+     var marker = new google.maps.Marker({
+    	 position: new google.maps.LatLng(-33.8688, 151.2195),
+         icon: 'img/home1.png',
+        
+         map: map
+    });
+     alert(marker);
+     
+     marker.addListener('click', function() {
+    	 alert("001");
+ 	    infowindow1.open(map, marker);
+ 	  });
+    var defaultBounds = new google.maps.LatLngBounds(
+      new google.maps.LatLng(-33.8902, 151.1759),
+      new google.maps.LatLng(-33.8474, 151.2631));
+    var options = {
+      bounds: defaultBounds
+    };
+    // Get the HTML input element for the autocomplete search box.
+    var input = document.getElementById('pac-input');
+    map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+    var autocomplete = new google.maps.places.Autocomplete(input, options);
+    // Define an info window to display the address details of the selected
+    // location.
+    var infowindow = new google.maps.InfoWindow();
+    var marker = new google.maps.Marker({
+    	
+         map: map
+    });
+    google.maps.event.addListener(autocomplete, 'place_changed', function() {
+      infowindow.close();
+      marker.setVisible(true);
+      var place = autocomplete.getPlace();
+      if (!place.geometry) {
+        return;
+      }
+      // If the place has a geometry, then present it on a map.
+      if (place.geometry.viewport) {
+        map.fitBounds(place.geometry.viewport);
+      } else {
+        map.setCenter(place.geometry.location);
+        map.setZoom(17);  // Why 17? Because it looks good.
+      }
+      marker.setIcon(({
+        url: place.icon,
+        size: new google.maps.Size(71, 71),
+        origin: new google.maps.Point(0, 0),
+        anchor: new google.maps.Point(17, 34),
+        scaledSize: new google.maps.Size(35, 35)
+      }));
+      marker.setPosition(place.geometry.location);
+      marker.setVisible(true);
+      // Get the address details from the place returned by autocomplete.
+      var address = '';
+      if (place.address_components) {
+        address = [
+          (place.address_components[0] && place.address_components[0].short_name || ''),
+          (place.address_components[1] && place.address_components[1].short_name || ''),
+          (place.address_components[2] && place.address_components[2].short_name || '')
+        ].join(' ');
+      }
+      infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+      infowindow.open(map, marker);
+    });
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+</head>
+
+<body>
+
+  <input id="pac-input" class="controls" type="text"
+      placeholder="Start typing here">
+
+  <div id="map-canvas"></div>
+</body>
+</html>

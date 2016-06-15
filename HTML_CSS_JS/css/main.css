@@ -1,0 +1,79 @@
+#map_canvas{
+	
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	
+}
+
+#map_can{
+	
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	
+}
+.ui-content.map-container{
+	top:50px;
+}
+.account-thumb.edit-pic{
+	background-position:center center !important;
+	background-size:cover !important;
+	background-repeat:no-repeat;
+}
+.pagi-thumb{
+	background-position:center top;
+	background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.gm-style-iw {
+ /* width: 350px !important;
+   top: 15px !important; // move the infowindow 15px down
+   left: 0 !important;
+   background-color: #fff;
+   box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+   border: 1px solid rgba(72, 181, 233, 0.6);
+   border-radius: 2px 2px 0 0;*/
+   background:none !important;
+   border:none !important;
+   height:4em !important;
+   width:auto  !important;
+   margin:30px 0 0 10px;
+}
+
+
+#date_time{
+ width:25px;
+ height:25px;
+ background:url(../img/clock-icon.png) no-repeat;
+ background-size:25px auto;
+ border:none;
+ font-size:0;
+ position:absolute;
+ right:10px;
+ top:10px;
+ cursor:pointer;
+}
+
+.book-time input{
+ max-width:6.1em;
+ color:#f16072;
+ background:none;
+ border:none;
+}
+
+.thumb-overlay{
+ position:absolute;
+ left:0;
+ right:0;
+ top:0;
+ bottom:0;
+ z-index:9;
+ background:rgba(0,0,0,0.7);
+}
+

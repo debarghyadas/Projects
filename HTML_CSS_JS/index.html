@@ -1,0 +1,3821 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BOOKD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+ <!--320-->
+ <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-title" content="BOOKD">
+
+
+      
+ <link rel="manifest" href="Flngmanifest.json">
+<link rel="stylesheet" type="text/css" href="css/addtohomescreen.css">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/countrySelect.min.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/main.css" />
+   <link rel="stylesheet" href="css/swipebox.css" />
+ <link rel="stylesheet" type="text/css" href="css/sweetalert2.css">
+ <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+  <link rel="stylesheet" type="text/css" href="css/wickedpicker.min.css" />
+   <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery.countdownTimer.css">
+  <link href="css/mobiscroll.animation.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.android.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.android-holo.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.ios-classic.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.ios.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.jqm.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.sense-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.frame.wp.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.android.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.android-holo.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.ios-classic.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.ios.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.jqm.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.sense-ui.css" rel= "stylesheet" type="text/css" />
+    <link href="css/mobiscroll.scroller.wp.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.image.css" rel="stylesheet" type="text/css" />
+  
+   
+    
+    
+    <link href="css/mobiscroll.android-holo-light.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.wp-light.css" rel="stylesheet" type="text/css" />
+    <link href="css/mobiscroll.mobiscroll-dark.css" rel="stylesheet" type="text/css" />
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,100,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" sizes="16x16" href="img/icon-16x16.png">
+<link rel="shortcut icon" sizes="196x196" href="img/icon-196x196.png">
+<link rel="apple-touch-icon-precomposed" href="img/icon-152x152.png">
+
+ <link href="img/apple-touch-startup-image-1536x2008.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPad, retina, landscape -->
+<link href="img/apple-touch-startup-image-1496x2048.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPad, portrait -->
+<link href="img/apple-touch-startup-image-768x1004.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+<!-- iPad, landscape -->
+<link href="img/apple-touch-startup-image-748x1024.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+<!-- iPhone 5 -->
+<link href="img/apple-touch-startup-image-640x1096.png"
+      media="(device-width: 320px) and (device-height: 568px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPhone, retina -->
+<link href="img/apple-touch-startup-image-640x920.png"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image">
+<!-- iPhone -->
+<link href="img/apple-touch-startup-image-320x460.png"
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image">
+ <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+ 
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.clearsearch-1.0.4.js"></script>
+<script src="js/imgLiquid-min.js"></script>
+<script src="js/starrr.min.js"></script>
+<script src="js/addtohomescreen.js"></script>
+
+<script src="js/jquery.swipebox.min.js"></script>
+ 
+<!--  <script src="js/jquery.mobile.js"></script>-->
+<script src="js/jquery.mobile.toast.js"></script>
+ <script src="js/jquery.city-autocomplete.min.js"></script>
+ 
+<!--  <script src="http://maps.google.com/maps/api/js?libraries=places&sensor=true"></script>-->
+<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyBdwIN-sosEe4bCf0gJy-a_YhmOPXIyr-Q&sensor=true"> </script> --> 
+<script type="text/javascript" charset="utf-8" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+<script src="js/infobubble-compiled.js"></script>
+<script src="js/jquery.creditCardValidator.js"></script>
+<script src="js/infobubble.js"></script>
+<script src="js/map.js"></script>
+<script type="text/javascript" src="js/jquery.tooltipster.js"></script>
+<script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+<script src="js/loadingoverlay.js"></script>
+<script  src="js/loadingoverlay.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/Register.js"></script>
+<script src="js/aes.js"></script>
+<script src="js/Datepicker.js"></script>
+  <script src="js/mobiscroll.core.js"></script>
+    <script src="js/mobiscroll.frame.js"></script>
+    <script src="js/mobiscroll.scroller.js"></script>
+
+    <script src="js/mobiscroll.util.datetime.js"></script>
+    <script src="js/mobiscroll.datetimebase.js"></script>
+    <script src="js/mobiscroll.datetime.js"></script>
+    <script src="js/mobiscroll.select.js"></script>
+    <script src="js/mobiscroll.listbase.js"></script>
+    <script src="js/mobiscroll.image.js"></script>
+    <script src="js/mobiscroll.treelist.js"></script>
+
+    <script src="js/mobiscroll.frame.android.js"></script>
+    <script src="js/mobiscroll.frame.android-holo.js"></script>
+    <script src="js/mobiscroll.frame.ios-classic.js"></script>
+    <script src="js/mobiscroll.frame.ios.js"></script>
+    <script src="js/mobiscroll.frame.jqm.js"></script>
+    <script src="js/mobiscroll.frame.sense-ui.js"></script>
+    <script src="js/mobiscroll.frame.wp.js"></script>
+
+    <script src="js/mobiscroll.android-holo-light.js"></script>
+    <script src="js/mobiscroll.wp-light.js"></script>
+    <script src="js/mobiscroll.mobiscroll-dark.js"></script>
+<script src="js/date.js"></script>
+<!-- <script src="js/jquery.countdownTimer.js"></script> -->
+<script src="js/settings.js"></script>
+<script src="js/timer.js"></script>
+
+<!--<script src="js/jquery.swipe.up.down.js"></script>-->
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/init.js"></script>
+
+
+<script src="js/countrySelect.min.js"></script>
+
+<!--  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>-->
+
+
+
+
+    
+
+ 
+  
+      <script>
+      var a;      localStorage.setItem("timeispassing","");      localStorage.setItem("timeispassing","false");
+      var interval;  	
+      var storeObject = {
+    		  search   : ''
+    		    
+    		}
+     /* function onDeviceReady() {
+    	  
+    	  
+    	  log_in();
+    	  
+    	  
+      }*/
+        
+  
+    
+      $( document ).ready(function() {
+    	
+    	  $('.cs').clearSearch();
+    	  init();
+   	  // init_final();
+   	  init_hotel();
+   	  init_home();
+   	  init_work();
+   	init_hot();
+   	init_wo();
+   	init_ho();
+   
+// setTimeout(function(){ get_notifications(); }, 3000);   	
+   	$("#imgpr").change(function(){
+   	    readURL(this);
+   	});
+  var movii = localStorage.getItem("girl_id");
+    
+ 
+    
+    if(movii == '' || movii === 'undefined' || movii === undefined){
+		
+    	 $.mobile.changePage("#home", {transition: "fade", reverse: false}, true, true);
+		
+	}
+   	$(document).bind('keydown', function(event) {
+   	  if (event.keyCode == 27) {
+   	    // Prevent default (disable the back button behavior)
+   	    event.preventDefault();
+
+   	    // Your code to show another page or whatever...
+   	  }
+   	});
+	  	
+   	
+   //	get_notifications();	     
+   	// log_in();          
+   /*	setInterval(function() {                  
+   		
+   		get_notifications();                 
+   		
+   	}, 60000);*/
+  
+   
+  	$('#card').on('focus', function(e) {
+   	
+   	   
+   	 
+ 	
+	//alert("5500");
+	validatecard();
+   	});
+
+
+
+
+  	  	
+    $(document).on("pagebeforeshow","#home",function(){   
+        console.log("home fired");	 
+       
+       if(localStorage.getItem("logged-in") == "true"){    		  
+    	   localStorage.setItem("flaggg","");              
+    	   localStorage.setItem("flaggg","true");   		   
+    	   $('body').addClass('logged-in');   		   
+    	   setTimeout(function(){    			   			   
+    		   localStorage.setItem("flag", "");   			   			    		   
+    		   }, 1000);   		      	       
+    	   }   	   
+       else {   	
+    	   console.log("else100");  
+    	   localStorage.setItem("flag11","true");           
+    	   localStorage.setItem("flaggg","");           
+    	   localStorage.setItem("flaggg","false");   		    
+    	    			
+    	   $('body').removeClass('logged-in');   			
+    	   console.log("else2");   		  
+    	   $.mobile.navigate("#loginregister",{transition: "flip", reverse: true});   		   	   
+    	   }    	      
+       });
+         
+
+
+     if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#loginregister"){
+                //$.mobile.navigate("#loginregister",{transition: "slide", reverse: false});
+                
+      if(localStorage.getItem("logged-in") == "true" && localStorage.getItem("logged-inn") == "true"){
+       $('body').addClass('logged-in');
+       setTimeout(function(){ 
+         localStorage.setItem("flag", "");
+      
+       
+         $.mobile.navigate("#home",{transition: "slideup", reverse: false});
+        //$.mobile.changePage('#home', {changeHash:false});
+        
+        
+       }, 1000);
+       
+         }
+     else {
+       localStorage.setItem("flag11","true");
+      //$('#splash .splash-screen').addClass('visible');
+      $('body').removeClass('logged-in');
+      $.mobile.navigate("#loginregister",{transition: "slide", reverse: false});
+    
+     }
+               
+               }
+
+
+
+   $(document).on("pageshow","#loginregister",function(){
+    console.log("pagebeforeshow event fired - pagetwo is about to be shown");
+    
+     if(localStorage.getItem("logged-in") == "true" && localStorage.getItem("logged-inn") == "true"){
+       $('body').addClass('logged-in');
+       setTimeout(function(){ 
+         localStorage.setItem("flag", "");
+      
+       
+         $.mobile.navigate("#home",{transition: "slideup", reverse: false});
+        //$.mobile.changePage('#home', {changeHash:false});
+        
+        
+       }, 1000);
+       
+         }
+     else {
+       localStorage.setItem("flag11","true");
+      //$('#splash .splash-screen').addClass('visible');
+      $('body').removeClass('logged-in');
+      $.mobile.navigate("#loginregister",{transition: "slide", reverse: false});
+    
+     }
+  });
+        
+         
+
+
+  
+    
+    $(document).on('click', '#terms1', function(e) {
+
+        
+
+        
+       e.preventDefault();
+
+         
+
+       (document.getElementById('terms').checked);
+          if(document.getElementById('terms').checked == false) {
+
+            
+           $('.custom-check input[type="checkbox"]').prop('checked', true);
+           
+         // $.mobile.navigate("#privacy",{transition: "slide", reverse: false});
+          privacy_in_new_tab();
+
+          } else {
+           $('.custom-check input[type="checkbox"]').prop('checked',false);
+          }
+
+     
+
+
+     
+        });
+
+
+   
+  	
+  	var DELAY = 700, clicks = 0, timer = null;
+  	 $("#pac-input3").on("click", function(e){
+
+         clicks++;  //count clicks
+
+         if(clicks === 1) {
+
+             timer = setTimeout(function() {
+
+                 //alert("Single Click");  //perform single-click action    
+                 clicks = 0;   
+                 search();//after action performed, reset counter
+
+             }, DELAY);
+
+         } else {
+
+             clearTimeout(timer);    //prevent single-click action
+             //alert("Double Click");  //perform double-click action
+             clicks = 0; 
+             swal("Multiple clicks not allowed");
+                                     //after action performed, reset counter
+         }
+
+     })
+     .on("dblclick", function(e){
+         e.preventDefault();  //cancel system double-click event
+     });
+
+  	    
+ 
+  
+   	
+  	$('#card').keyup(function() {
+  	  var foo = $(this).val().split("-").join(""); // remove hyphens
+  	  if (foo.length > 0) {
+  	    foo = foo.match(new RegExp('.{1,4}', 'g')).join("-");
+  	  }
+  	  $(this).val(foo);
+  	});
+  	
+  
+
+ /*  	$('.cs1').click(function(){
+   		//alert("999");
+   	 $("#dob").scroller('setDate', "", true);
+   	});  
+   	
+ */
+   	$('#ico2').click(function(){
+   	    $('#autocomplete3').focus();
+   	});  
+   	
+   	$('#cancelpay').click(function(){
+   	    //$('#autocomplete3').focus();
+   	   
+   	    go_home22();
+   	});
+    	
+     
+    	//  $("#popupInfo").popup();
+    	 // $("#popupInfo1").popup();
+    	 
+    	  $("#messagepop1").popup();
+    	  $("#messagepop2").popup();
+    	  $("#messagepop3").popup();
+    	
+    	  
+    	  $( '.swipebox' ).swipebox();
+    	  
+    	/*  $("#call").click(function() {
+    	        //Do stuff when clicked
+    	        
+    			//alert("call");
+    	    	var no = localStorage.getItem("number");
+    	    	//window.plugins.CallNumber.callNumber(onSuccess, onError, no, false);
+    	    	// $.LoadingOverlay("hide");
+    	    	//document.location.href = no;
+    	    	window.plugins.CallNumber.callNumber(onSuccess, onError, "+123456", false);
+    	    });
+    	  
+    	  
+    	  
+    	  $("#call1").click(function() {
+  	        //Do stuff when clicked
+  	        
+  			//alert("call");
+  	    	var no = localStorage.getItem("nuum");
+  	    	//window.plugins.CallNumber.callNumber(onSuccess, onError, no, false);
+  	    	// $.LoadingOverlay("hide");
+  	    	//document.location.href = no;
+  	    	window.plugins.CallNumber.callNumber(onSuccess, onError, no, false);
+  	    });
+    	  
+    	  $("#call_help").click(function() {
+    	        //Do stuff when clicked
+    	        
+    			//alert("call");
+    	    	var no = "+10912345678";
+    	    	//window.plugins.CallNumber.callNumber(onSuccess, onError, no, false);
+    	    	// $.LoadingOverlay("hide");
+    	    	//document.location.href = no;
+    	    	window.plugins.CallNumber.callNumber(onSuccess, onError, no, false);
+    	    });
+    	  
+    	
+    	  
+    	  $("#call3").click(function() {
+  	        //Do stuff when clicked
+  	        
+  			//alert("call");
+  	    	var no = localStorage.getItem("nuum");
+  	    	//window.plugins.CallNumber.callNumber(onSuccess, onError, no, false);
+  	    	// $.LoadingOverlay("hide");
+  	    	//document.location.href = no;
+  	    	window.plugins.CallNumber.callNumber(onSuccess, onError, no, false);
+  	    });
+    	  
+    	  $("#sms").click(function() {
+  	        //Do stuff when clicked
+  	        $('#messagepop3').popup('open');
+  			//alert("sms");
+  	    
+  	    	
+  	    	// $.LoadingOverlay("hide");
+  	    	//document.location.href = no;
+  	    
+  	    });
+    	  
+    	 
+    	  
+    	  $("#sms1").click(function() {
+  	        //Do stuff when clicked
+  	        $('#messagepop2').popup('open');
+  			//alert("sms");
+  	    
+  	    	
+  	    	// $.LoadingOverlay("hide");
+  	    	//document.location.href = no;
+  	    
+  	    });
+    	  
+    	  $("#sms3").click(function() {
+    	        //Do stuff when clicked
+    	        $('#messagepop1').popup('open');
+    			//alert("sms");
+    	    
+    	    	
+    	    	// $.LoadingOverlay("hide");
+    	    	//document.location.href = no;
+    	    
+    	    });
+    	  
+    	  function onSuccess(){
+    		  
+    			swal({   title: "Flng!",   text: "Call initiated!",   timer: 3000,   showConfirmButton: false });
+    		  
+    	  }
+  function onError(){
+    		  
+		swal({   title: "Flng!",   text: "Call not initiated!",   timer: 3000,   showConfirmButton: false });
+    		  
+    	  }
+  
+  $("#btnsnd1").click(function() {
+      //Do stuff when clicked
+      
+		//alert("call");
+      var no = localStorage.getItem("nuum");
+      var msg =   $("#writemsg1").val();
+		var messageInfo = {
+	    		    phoneNumber: no,
+	    		    textMessage: msg
+	    		};
+
+	    		sms.sendMessage(messageInfo, function(message) {
+	    		   // alert("success: " + message);
+	    		  swal("FLNG!", "Message Sent", "success");
+	    		  $('#messagepop1').popup('close');
+	    		  
+	    		}, function(error) {
+	    		   //alert("code: " + error.code + ", message: " + error.message);
+	    			swal("FLNG!", ""+error.message, "error");
+	    			 $('#messagepop1').popup('close');
+	    		});
+  
+  });
+    	  
+  $("#btnsnd2").click(function() {
+      //Do stuff when clicked
+      
+		//alert("call");
+      var no = localStorage.getItem("nuum");
+      var msg =   $("#writemsg2").val();
+		var messageInfo = {
+	    		    phoneNumber: no,
+	    		    textMessage: msg
+	    		};
+
+	    		sms.sendMessage(messageInfo, function(message) {
+	    		   // alert("success: " + message);
+	    		  swal("FLNG!", "Message Sent", "success");
+	    		  $('#messagepop2').popup('close');
+	    		  
+	    		}, function(error) {
+	    		   //alert("code: " + error.code + ", message: " + error.message);
+	    			swal("FLNG!", ""+error.message, "error");
+	    			 $('#messagepop2').popup('close');
+	    		});
+  
+  });
+    	  
+  $("#btnsnd3").click(function() {
+      //Do stuff when clicked
+      
+		//alert("call");
+      var no = localStorage.getItem("nuum");
+      var msg =   $("#writemsg3").val();
+		var messageInfo = {
+	    		    phoneNumber: no,
+	    		    textMessage: msg
+	    		};
+
+	    		sms.sendMessage(messageInfo, function(message) {
+	    		   // alert("success: " + message);
+	    		  swal("FLNG!", "Message Sent", "success");
+	    		  $('#messagepop3').popup('close');
+	    		  
+	    		}, function(error) {
+	    		   //alert("code: " + error.code + ", message: " + error.message);
+	    			swal("FLNG!", ""+error.message, "error");
+	    			 $('#messagepop3').popup('close');
+	    		});
+  
+  });
+  
+  */
+  
+  
+ 
+    	
+    	  
+    	 
+    	  /*  $('.starrr').on('click.starrr', function(e, value){
+    	    	
+    	    // $('.starrr').setRating(4);
+    	      if (value) {
+    	       // $('.your-choice-was').show();
+    	        //$('.choice').text(value);
+    	        alert(value);
+    	      } else {
+    	       // $('.your-choice-was').hide();
+    	      }
+    	    });*/
+    	  
+    	 
+    
+  	     
+    	    $(document).on("pageshow","#newcard",function(){ // When entering pagetwo
+     	    	 //
+             	 
+             	 //   get_notifications();
+                        localStorage.setItem("flagg","");
+             	         localStorage.setItem("flaggg", "true");
+             	    	
+             	    	 $("#country_selector").countrySelect();
+                        // $('#card_month').monthpicker();
+             	    	
+             	    	  //validatecard();
+             	    	  
+
+             	        var now = new Date();
+                   
+             	        $('#card_month').mobiscroll().date({
+             	            theme: 'sense-ui',
+             	            display: 'bubble',
+             	            dateOrder: 'mm',
+             	            dateFormat: 'mm',
+             	            monthText: 'Expiration Month',
+             	            headerText: false,
+             	            startYear: now.getFullYear(),
+             	            endYear: now.getFullYear() + 10,
+             	            minWidth: 100
+             	        });
+
+             	       $('#card_year').mobiscroll().date({
+            	            theme: 'sense-ui',
+            	            display: 'bubble',
+            	            dateOrder: 'yy',
+            	            dateFormat: 'yy',
+            	            yearText: 'Expiration Year',
+             	            headerText: false,
+            	            startYear: now.getFullYear(),
+            	            endYear: now.getFullYear() + 20,
+            	            minWidth: 100
+            	        });
+
+ 		        
+         	      
+              
+     	   
+  });
+    	  
+    	    
+    	    
+    	     
+    	    $(document).on("pagehide","#register",function(){ // When entering pagetwo
+     	    	 //
+             	 
+             	    	
+             	 //   
+              
+             	       
+             	       
+                    $('#dob').val('');
+             	     
+ 		        
+         	      
+             	  
+     	   
+  });	    
+    	    
+
+                $(document).on("pageshow","#about",function(){ // When entering pagetwo
+             //
+               
+                    
+               //   
+              
+                    localStorage.setItem("flagg","");  
+                   getabout();
+                   
+            
+                
+                
+         
+  });     
+          
+         
+    	    
+     	     
+    	    $(document).on("pageshow","#register",function(){ // When entering pagetwo
+     	    	 //
+             	 
+             	    	
+             	 //   
+              
+             	       
+             	     // get_notifications(); 
+                   
+             	       $('#dob').mobiscroll().date({
+             	          theme: 'sense-ui',
+             	          display: 'bottom',
+             	          dateOrder: 'MMddyy',
+             	          dateFormat: 'MM dd yy',
+             	         defaultValue: undefined
+             	         
+             	      });
+ 		        
+         	      
+             	  
+     	   
+  });
+    	
+    	    
+    	    $(document).on("pageshow","#payment",function(){ // When entering pagetwo
+    	    	 //        
+             localStorage.setItem("flagg","");
+                     get_notifications();
+            	  localStorage.setItem("callback", "");
+            	  localStorage.setItem("callback1", "");
+            	  $("#get_card").empty(); 
+            	getcarddetails();
+		        
+        	      
+             
+    	   
+ });
+               
+   
+    	/* if(localStorage.getItem("page-id") == "1"){
+    		   setTimeout(function(){ 
+    			   localStorage.setItem("flag", "");
+  	    	 $.mobile.navigate("#standby",{transition: "slideup", reverse: false});
+    		   }, 3000);
+  	       }
+  	       
+    	 if(localStorage.getItem("page-id") == "2"){
+  		   setTimeout(function(){ 
+  			   localStorage.setItem("flag", "");
+	    	 $.mobile.navigate("#confirmation",{transition: "slideup", reverse: false});
+  		   }, 3000);
+	       }
+	       
+    	 if(localStorage.getItem("page-id") == "3"){
+  		   setTimeout(function(){ 
+  			   localStorage.setItem("flag", "");
+	    	 $.mobile.navigate("#suggest",{transition: "slideup", reverse: false});
+  		   }, 3000);
+	       }
+	       */
+	       $(document).on("pageshow","#confirmation",function(){ // When entering pagetwo
+  	    	 //$.LoadingOverlay("show");   
+  	     
+  	    	 //clearInterval(interval);https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7369.817659446435!2d88.39264757937714!3d22.54508775072496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xadf43cb046681a31!2sMilan+Mela!5e0!3m2!1sen!2s!4v1449615595414
+         	  //alert("00");
+                 get_notifications();
+  	    	 	var no = localStorage.getItem("nuum");
+  	    	 	localStorage.setItem("sug","");  	    	  $(".text-call").empty();
+           	  $(".text-call").append(no);
+  	    	   $(document).on("popupafteropen", "#messagepop2",function( event, ui ) {
+	       // alert('popup');
+	      
+	    	   var num = localStorage.getItem("nuum");
+	    	 
+	    	    $("#mobnum2").val(num);
+		        $("#writemsg2").val();
+		        
+	    
+	      
+ });
+      
+	    	
+	    	    localStorage.setItem("flagg","");
+          	  localStorage.setItem("payment", "");
+         	var request_id = localStorage.getItem("req-id");
+         	
+        	   jQuery.ajax({
+        	         type: 'POST',
+        	         beforeSend: function() {
+        	       	  
+        	        	 $('.loading').css({'display':'block'});               
+        	        
+        	        }, //Show spinner
+        	          complete: function() {
+        	        	 
+        	           setTimeout(function() {
+        	        	   $('.loading').css({'display':'none'}); 
+        	                      }, 2000);
+        	           
+        	           
+        	         }, //Hide spinner
+        	           url: 'http://www.unifiedinfotech.co.in/webroot/team1/DatingApp/service_call/get_confirmation_details',
+        	           data: {
+        	           tag: 'get_confirmation_details',
+        	           request_id:request_id,
+        	         
+        	                   
+        	        
+        	           },
+        	           
+        	           success: function(response) {
+        	          //alert(response);
+        	         var jsObject = JSON.parse(response);
+                   var result = jsObject.status;
+                   var pic = jsObject.data.pic;
+                  var g_id = jsObject.data.other.girl_id;
+                   var req_id = jsObject.data.request_id;
+                   var name = jsObject.data.name;
+                   var time = jsObject.data.waiting_minutes;
+                   var c_charge = jsObject.data.cancellation_charge;
+                   var amt1 = Math.floor(c_charge);
+                   
+                   var date_booked_arr=jsObject.data.date_booked.split('-');
+   				   var time_booked_arr=jsObject.data.time_booked.split(':');
+   				
+   				   var date_booked = date_booked_arr[0]+'/'+date_booked_arr[1]+'/'+date_booked_arr[2];
+   				
+   				   var time_booked = time_booked_arr[0]+':'+time_booked_arr[1]+':'+0;
+   				
+   				    var tot = date_booked+' '+time_booked;
+   				
+                   var booking_date_time = jsObject.data.date_booked+' '+jsObject.data.time_booked;
+                   
+                   var curre_date_time = Date.now();
+                   
+                   var d2 = new Date(tot);
+                   console.log(jsObject.data.waiting_minutes);
+                   d2 = new Date(dateAdd(d2,'minute',jsObject.data.waiting_minutes));
+                   
+                   var d1 = new Date(curre_date_time);
+                   
+                   var diff_seconds = (d2-d1);
+                      var time11 = parseInt(diff_seconds/1000);
+                   
+                   if(diff_seconds<=0){
+                    
+                	   setTimeout(function() {
+          		                   		      $.mobile.navigate("#rating",{transition: "slide", reverse: false}); 
+              		                   		     }, 2000); 
+                   }
+                   
+                   else{
+                    
+                    time = Math.floor(diff_seconds/60000);
+                    
+                    var secs = Math.ceil((diff_seconds%60000)/1000);
+                   }
+                   
+                   
+                   
+                   localStorage.setItem("pro_pic", pic);
+                   localStorage.setItem("g_id", g_id);
+                  localStorage.setItem("m_name", name);
+                  $('#text-time').remove();
+                   $('#con-fee').empty();
+                   $('#con-time').empty(); 
+                   $('#con-stat').empty(); 
+               	$('#con-pic').css('background-image', 'url(' + pic + ')');
+              	$('#con-fee').append('<em><span class="text-pink">*</span> $ '+amt1+' cancelation fee</em>');  
+                 $('#con-time').append('<span>'+
+                '<span class="timer" id="text-time" data-seconds-left="'+time11+'"></span>'+
+                '</span> minutes before '+name+' arrives');
+                  $('#con-stat').append('Get Ready For '+name+'!'); 
+
+               $('#text-time').startTimer({
+                  onComplete: function(){
+                   timeisdone();
+                 }
+                  });
+        	          
+        	           },
+        	           
+        	           error: function (response) {
+        	             // alert(JSON.stringify(response));
+        	          	 //swal("Flng", "OOPS!.Something Went Wrong with the server.Try Again", "error");
+        	           },
+        	         
+        	           
+        	           });
+        	   
+        	           
+        	    
+        		
+         	 
+         	  	
+      
+        	   $(document).on("mobileinit", function (e, data) {
+           	    $.mobile.autoInitializePage = false; /* optional - stop auto-initalization */
+           	    if ((localStorage.getItem("logged-in") == "true" && localStorage.getItem("logged-inn") == "true")) {
+           	        $(function () {
+           	            $("#home").prependTo("body"); /* make "login" page first child of "pagecontainer" (body by default) */
+           	            $.mobile.initializePage(); /* optional - manual initialization */
+           	        });
+           	    }
+           	});
+	    		    
+  	    	});
+           
+           
+    	
+  	    
+  	        document.addEventListener("backbutton", onBackKeyDown, false);
+    	     $("[data-role=panel] a").on("click", function () {
+    		  
+    		    if($(this).attr("href") == "#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' )) {
+    		    
+    		      $("[data-role=panel]").panel().panel("close");
+    		    }
+    		  });
+    	       
+    	     date();
+    	
+    	 
+    	  
+    	    
+    	    	
+      		  function onBackKeyDown(e) {
+      		  
+      		    if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#home"){
+      		    	logout();
+      		     }
+
+      		    if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#login"){
+      		    	$.mobile.navigate("#loginregister",{transition: "slide", reverse: false});
+      		     }
+      		    if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#loginregister"){
+      		    	//$.mobile.navigate("#loginregister",{transition: "slide", reverse: false});
+      		    	 swal({
+      		    	        title: "Are you sure?",
+      		    	        text: "Want to Exit?",
+      		    	        type: "warning",
+      		    	        showCancelButton: true,
+      		    	        confirmButtonColor: "#DD6B55",
+      		    	        confirmButtonText: "Yes, I WANT TO EXIT!",
+      		    	        closeOnConfirm: false
+      		    	        },
+      		    	        
+      		    	       
+      		    	        function(){
+      		    	        	navigator.app.exitApp(); 
+      		    	        
+      		    	        }
+      		    	        );
+      		     
+      	       }
+      		  if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#register"){
+      			$.mobile.navigate("#loginregister",{transition: "slide", reverse: false});
+      		  }
+      		  if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#forgotpassword"){
+      			$.mobile.navigate("#register",{transition: "slide", reverse: false});
+      		  }
+      		  
+      		 if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#removeplacealter"){
+      	
+      			   storeObject.search = $("#autocomplete").val();
+      			go_home();
+      			
+       			
+       		  }
+      		 
+      		 if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#removeplace2"){
+      		   storeObject.search = $("#autocomplete").val();
+   			  $.mobile.navigate("#removeplacealter",{transition: "slide", reverse: false});
+      		 }
+      		 
+      		 if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#removeplace3"){
+        		   storeObject.search = $("#autocomplete").val();
+     			  $.mobile.navigate("#removeplacealter",{transition: "slide", reverse: false});
+        		 }
+      		 
+      		 if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#removeplace1"){
+        		   storeObject.search = $("#autocomplete").val();
+     			  $.mobile.navigate("#removeplacealter",{transition: "slide", reverse: false});
+        		 }
+      		 
+      		/* if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#standby"){
+      		 //  storeObject.search = $("#autocomplete").val();
+      			 $.mobile.navigate("#paymentconfirmation",{transition: "slide", reverse: false});
+      		 }*/
+      		 
+      	
+      		 
+      		 if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#removeplace5"){
+          		 //  storeObject.search = $("#autocomplete").val();
+          			 $.mobile.navigate("#settings",{transition: "slide", reverse: false});
+          		 }
+      		 
+      		 if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#removeplace6"){
+          		 //  storeObject.search = $("#autocomplete").val();
+          			 $.mobile.navigate("#settings",{transition: "slide", reverse: false});
+          		 }
+      		 
+      		 if("#"+$.mobile.pageContainer.pagecontainer( 'getActivePage' ).attr( 'id' ) == "#removeplace7"){
+          		 //  storeObject.search = $("#autocomplete").val();
+          			 $.mobile.navigate("#settings",{transition: "slide", reverse: false});
+          		 }
+  }
+      		  
+      	     
+      	     $(document).on("pageshow","#details",function(){ // When entering pagetwo
+      	  
+      	    	 //$.LoadingOverlay("show");   
+      	     
+      	    	 //clearInterval(interval);
+      	   		
+      	   			//alert("555");
+      	   		
+      	   			/*$(function(){
+      	   		//    $('#lightgallery').lightGallery('destroy');
+      	   			/*$('#lightgallery').lightGallery({
+      	   				thumbMargin:0,
+      	   				thumbnail:false
+      	   			});
+      	   		});*/
+      	   		
+      	   	  //alert("00");
+      	   	  
+      	   	
+      	 
+      	    	//$( '.swipebox' ).swipebox();
+      	  /* 	var t = localStorage.getItem("req-time");
+      	 
+      	   	if(!t == ''){
+      	    	 $("#book_set").empty();
+      	    	 
+      	    	 $("#book_set").text("Booking set for"+convertTime24to12(t));
+      	   	}
+      	   	else{
+      	   		
+      	   	$("#book_set").empty();
+ 	    	 
+ 	    	 $("#book_set").text("20 Min away");
+      	   		
+      	   	}
+      	   */
+                    localStorage.setItem("flagg","");
+      	         	 get_notifications();
+      	   
+      	   
+      	  $("#lightgallery").empty();
+          //  alert(JSON.stringify(gpics));
+          /*  for(var i=0;i<gpics.length;i++){
+          	  
+          	  alert(gpics[i].link);
+          	  
+            }
+            alert(gpics[0].link);*/
+      	  
+   		 $("#slide-age").empty();
+   		 $("#det-head").empty();
+  		 $("#slide-height").empty();
+  		 $("#slide-hair").empty();
+  		 $("#slide-fee").empty();
+  		 $("#slide-bio").empty();
+      	 get_details(localStorage.getItem("g_id"));
+
+   	    	   if(localStorage.getItem("logged-in") == "true" && localStorage.getItem("logged-inn") == "true"){
+   	    		   
+   	    		   
+   	    	   }
+  
+   	    	   else{
+   	    		  
+   	    		  $.mobile.navigate("#login",{transition: "slideup", reverse: false});
+   	    		   
+   	    	   }
+      	   	
+      	    	});
+      	     
+      	     $(document).on("pagehide","#details",function(){ // When entering pagetwo
+      	      	  
+      	    	 //$.LoadingOverlay("show");   
+      	     
+      	    	 //clearInterval(interval);
+      	   		
+      	   			//alert("555");
+      	   		
+      	   			/*$(function(){
+      	   		//    $('#lightgallery').lightGallery('destroy');
+      	   			/*$('#lightgallery').lightGallery({
+      	   				thumbMargin:0,
+      	   				thumbnail:false
+      	   			});
+      	   		});*/
+      	   		
+      	   	  //alert("00");
+      	   	  
+      	   	
+      	 
+      	    	//$( '.swipebox' ).swipebox();
+      	   	
+      	   	  	
+      	    	$('.bottom-slide').removeClass('visible');
+      	  	$('.slide-trigger').removeClass('down');
+      	   
+      	   	
+      	    	});
+      	     
+      	     
+      	   $(document).on("pageshow","#privacy",function(){ // When entering pagetwo
+  	    
+            localStorage.setItem("flagg","");
+      		 getprivacy();
+         	
+         	  	
+      
+         	
+  	    	});
+      	     
+      	   
+             $(document).on("pagehide","#rating",function(){ // When entering pagetwo
+    	    	 //$.LoadingOverlay("show");   
+    	     
+    	    	 //clearInterval(interval);
+           	  //alert("00");
+           	  
+          
+           	
+           	  	
+        
+           	
+    	    	});
+             
+             
+             $(document).on("pagehide","#standby",function(){ // When entering pagetwo
+    	    	 //$.LoadingOverlay("show");   
+    	     
+    	    	 //clearInterval(interval);
+           	  //alert("00");
+           	  
+            	 $('#can-fee').empty();
+           	
+            	 clearInterval(a);
+        
+           	
+    	    	});
+             
+             
+
+             $(document).on("pageshow","#notification",function(){ // When entering pagetwo
+    	    	
+            	  localStorage.setItem("flagg","");
+            	 get_notifications();
+        
+           	
+    	    	});
+             
+             
+             
+             
+             $(document).on("pagehide","#confirmation",function(){ // When entering pagetwo
+    	    	 //$.LoadingOverlay("show");   
+    	     
+    	    	 //clearInterval(interval);
+           	  //alert("00");
+           	  
+            	   
+            	    $('#text-time').empty();
+                    $('#con-fee').empty();
+                    $('#con-time').empty(); 
+                    $('#con-stat').empty(); 
+           	  	
+        
+           	
+    	    	});
+             
+             
+           
+             
+             
+      
+             
+             $(document).on("pageshow","#standby",function(){ // When entering pagetwo
+    	    	 //$.LoadingOverlay("show");   
+    	     
+    	    	 //clearInterval(interval);
+           	  //alert("00");
+               localStorage.setItem("flagg","");
+get_notifications();
+   	  
+           	 	var no = localStorage.getItem("nuum");           	 $(".text-call").empty();
+           	  $(".text-call").append(no);
+           	  a = setInterval(function(){ checkforstatus(); }, 30000);
+           	    $(document).on("popupafteropen", "#messagepop1",function( event, ui ) {
+	       // alert('popup');
+	      
+	    	   var num = localStorage.getItem("nuum");
+	    	
+	    	    $("#mobnum1").val(num);
+		        $("#writemsg1").val();
+		        
+	    
+	      
+ });
+            	
+        localStorage.setItem("payment", "");
+            	  
+           	var request_id = localStorage.getItem("req-id");
+          	   jQuery.ajax({
+          	         type: 'POST',
+          	         beforeSend: function() {
+          	       	  
+          	        	 $('.loading').css({'display':'block'});              
+          	        
+          	        }, //Show spinner
+          	          complete: function() {
+          	        	 
+          	           setTimeout(function() {
+          	        	 $('.loading').css({'display':'none'}); 
+          	                      }, 2000);
+          	           
+          	           
+          	         }, //Hide spinner
+          	           url: 'http://www.unifiedinfotech.co.in/webroot/team1/DatingApp/service_call/get_request_details',
+          	           data: {
+          	           tag: 'get_request_details',
+          	           request_id:request_id,
+          	         
+          	                   
+          	        
+          	           },
+          	           
+          	           success: function(response) {
+          	           //alert(response);
+          	         var jsObject = JSON.parse(response);
+                     var result = jsObject.status;
+                     var pic = jsObject.data.pic;
+                     var req_id = jsObject.data.request_id;
+                     var c_charge = jsObject.data.cancellation_charge;
+                     var amt1 = Math.floor(c_charge);
+                     $('#can-fee').empty();
+                 	$('#set-fit').css('background-image', 'url(' + pic + ')');
+                	$('#can-fee').append('<em><span class="text-pink">*</span> $ '+amt1+' cancelation fee</em>');  
+                      
+                        
+          	          
+          	           },
+          	           
+          	           error: function (response) {
+          	             // alert(JSON.stringify(response));
+          	          	 //swal("Flng", "OOPS!.Something Went Wrong with the server.Try Again", "error");
+          	           },
+          	         
+          	           
+          	           });
+          	    
+          		
+           	 
+           	  	
+         	    
+           	
+    	    	});
+             
+             
+             
+             
+             
+             
+         
+             
+             $(document).on("pageshow","#suggest",function(){ // When entering pagetwo
+    	    	 //$.LoadingOverlay("show");   
+    	     
+    	    	 //clearInterval(interval);
+           	  //alert("00");
+           	 
+            localStorage.setItem("flagg","");
+         	   get_notifications();
+            	 localStorage.setItem("payment", ""); 
+           	var request_id = localStorage.getItem("req-id");
+           	
+         
+          	   jQuery.ajax({
+          	         type: 'POST',
+          	         beforeSend: function() {
+          	       	  
+          	        	 $('.loading').css({'display':'block'});               
+          	        
+          	        }, //Show spinner
+          	          complete: function() {
+          	        	 
+          	           setTimeout(function() {
+          	        	 $('.loading').css({'display':'none'}); 
+          	                      }, 2000);
+          	           
+          	           
+          	         }, //Hide spinner
+          	           url: 'http://www.unifiedinfotech.co.in/webroot/team1/DatingApp/service_call/get_alternate_details',
+          	           data: {
+          	           tag: 'get_alternate_details',
+          	           request_id:request_id,
+          	         
+          	                   
+          	        
+          	           },
+          	           
+          	           success: function(response) {
+          	          // alert(response);
+          	         $("#content2").empty();
+          	         var jsObject = JSON.parse(response);
+                     var result = jsObject.status;
+                     var mname = jsObject.data.name;
+                     var amt = jsObject.data.alternate_girl_charge;
+                     var amt1 = Math.floor(amt);
+                    
+                   
+                     $("#text1").empty();
+                     $("#text1").append('Looks like something happened with '+mname+', but dont worry, we have a few other girls available (guaranteed) and for the inconvenience we will only charge you $ '+amt1+' for the one-time booking fee');
+                     if(jsObject.data.alternate_girls.length > 1){
+                     
+               for(var i=0;i<jsObject.data.alternate_girls.length;i++){
+                    	
+                    	 var con_no = jsObject.data.alternate_girls[i].contact_no;
+                    	 localStorage.setItem("number", con_no);
+ 
+ $("#content2").append('<a href="#" class="pic" data-transition="slide" onClick="get_confirmed('+jsObject.data.alternate_girls[i].id +');"><span class="pagi-thumb imageFit" id="pico'+i+'"></span><figure><span class="model-name">'+jsObject.data.alternate_girls[i].name+'</span><span class="model-age">'+jsObject.data.alternate_girls[i].age+'</span></figure></a>');
+ 
+ $("#pico"+i).css('background-image', 'url('+jsObject.data.alternate_girls[i].profile_pic+')');
+                     }
+                     }
+                     else{
+                    
+                    	 var con_no = jsObject.data.alternate_girls[0].contact_no;
+                    	 localStorage.setItem("number", con_no);
+                    	 $("#content2").append('<a href="#" class="pic" data-transition="slide" onClick="get_confirmed('+jsObject.data.alternate_girls[0].id +');"><span class="pagi-thumb imageFit" id="pico'+i+'"></span><figure><span class="model-name">'+jsObject.data.alternate_girls[0].name+'</span><span class="model-age">'+jsObject.data.alternate_girls[0].age+'</span></figure></a>');
+                    	 
+                    	 $("#pico"+i).css('background-image', 'url('+jsObject.data.alternate_girls[0].profile_pic+')');
+                     }
+          	           },
+          	           
+          	           error: function (response) {
+          	             // alert(JSON.stringify(response));
+          	          	 //swal("Flng", "OOPS!.Something Went Wrong with the server.Try Again", "error");
+          	           },
+          	         
+          	           
+          	           });
+          	   
+          	           
+          	    
+          		
+           	 
+           	  	
+         	    
+           	
+    	    	});
+             
+      
+             
+             $(document).on("pagehide","#details",function(){ // When entering pagetwo
+    	    	 //$.LoadingOverlay("show");   
+    	     
+    	    	 //clearInterval(interval);
+           	  //alert("00");
+          /* 	$(function(){
+           	$('#lightgallery').lightGallery('destroy');
+           	});*/
+           	
+           	 
+           	  	
+        
+           	
+    	    	});
+            
+            
+             	
+           
+  
+       
+           
+
+             $(document).on("pagehide","#newcard",function(){ // When entering pagetwo
+    	    	 //
+    	      $("#country_selector").countrySelect("setCountry", "United States");
+
+            	 $("#card").val('');
+                 $("#card_month").val('');
+                 $("#card_year").val('');
+                 $("#zip").val('');
+                 $(".card-holder").empty();
+		         $(".card-holder").append('<i class="fa fa-credit-card"></i>');
+             		        
+         	
+        	    
+	      
+ });
+             
+           
+             
+             
+             $(document).on("pagehide","#listing",function(){ // When entering pagetwo
+    	    	 //$.LoadingOverlay("show");   
+    	     
+    	    	 //clearInterval(interval);
+           	  //alert("00");
+          /* 	$(function(){
+           	$('#lightgallery').lightGallery('destroy');
+           	});*/
+            	  
+        	     $('#date_timeee').mobiscroll().time({
+          	        theme: 'android',   
+          	        mode: 'scroller',      
+          	        display: 'modal',
+          	        headerText: 'ENTER YOUR DESIRED MEETING TIME',
+          	        minWidth: 100
+          	                        
+          	    });
+         	  
+        		/*  $("#date_timeee").bind("change", function() {
+           	      // alert($(this).val()); 
+           	       
+           	    var time = $(this).val();
+     	       var hours = Number(time.match(/^(\d+)/)[1]);
+     	       var minutes = Number(time.match(/:(\d+)/)[1]);
+     	       var AMPM = time.match(/\s(.*)$/)[1];
+     	       if (AMPM == "PM" && hours < 12) hours = hours + 12;
+     	       if (AMPM == "AM" && hours == 12) hours = hours - 12;
+     	       var sHours = hours.toString();
+     	       var sMinutes = minutes.toString();
+     	       if (hours < 10) sHours = "0" + sHours;
+     	       if (minutes < 10) sMinutes = "0" + sMinutes;
+     	       //alert(sHours + ":" + sMinutes);
+     	        localStorage.setItem("flag", "true");
+     	   	localStorage.setItem("hrs", sHours);
+     		localStorage.setItem("mins",AddZero(sMinutes));
+     		
+     		 var lat = localStorage.getItem("lat");
+    		 var lon = localStorage.getItem("lon");
+    		
+    		//get_no_of_girls(lat , lon);
+    		 iflisting();
+           	 });
+           	 */
+        
+           	
+    	    	});
+             
+             
+                     
+             
+             $(document).on("pageshow","#listing",function(){ // When entering pagetwo
+    	    	 //$.LoadingOverlay("show");   
+            	
+    	    	 //clearInterval(interval);
+           	  //alert("00");
+          /* 	$(function(){
+           	$('#lightgallery').lightGallery('destroy');
+           	});*/
+            	  
+        	   /*  $('#date_timeee').mobiscroll().time({
+          	        theme: 'android',   
+          	        mode: 'scroller',      
+          	        display: 'modal'
+          	                        
+          	    });*/ 
+              console.log(localStorage.getItem("flagg") == "true");
+             console.log(localStorage.getItem("flagg") != "true");
+                   if(localStorage.getItem("flagg") != "true"){
+                       
+                        listing();
+                        
+                   }         	 
+                 $('.custom-loader').css({'display':'block'});      
+          	    localStorage.setItem("list","");
+          	  localStorage.setItem("list","true");
+          	      get_notifications();          	                             
+          	     // list();          	    
+            	 localStorage.setItem("pay-check1", "true");
+            	 localStorage.setItem("pay-check", "");
+           	
+    	    	});
+             
+             
+             $(document).on("pagehide","#listing",function(){ // When entering pagetwo
+    	    	 //$.LoadingOverlay("show");   
+            	
+    	    	 //clearInterval(interval);
+           	  //alert("00");
+          /* 	$(function(){
+           	$('#lightgallery').lightGallery('destroy');
+           	});*/
+            	  
+        	   /*  $('#date_timeee').mobiscroll().time({
+          	        theme: 'android',   
+          	        mode: 'scroller',      
+          	        display: 'modal'
+          	                        
+          	    });*/
+          	    localStorage.setItem("list","");
+          	
+           	
+    	    	});
+             
+             
+             
+             
+             $(document).on("pagebeforecreate","#rating",function(){ // When entering pagetwo
+    	    	 //
+    	    	 	var no = localStorage.getItem("nuum");    	    	 	$(".text-call").empty();
+           	  $(".text-call").append(no);
+    	    	  localStorage.setItem("edit", "");
+    	    	   $(document).on("popupafteropen", "#messagepop3",function( event, ui ) {
+	       // alert('popup');
+	        localStorage.setItem("flagg","");
+	    	   var num = localStorage.getItem("nuum");
+	    	
+	    	    $("#mobnum3").val(num);
+		        $("#writemsg3").val();
+		        
+	    
+	      
+ });
+             $('.loading').css({'display':'none'}); 
+    	     
+    	    	 //clearInterval(interval);
+    	    	 	//$('#rat-msg').empty(); 
+    	    	 	localStorage.setItem("page-id", "");
+    	    	 	 localStorage.setItem("payment", "");
+           	 // alert("00");
+           	   var pic =  localStorage.getItem("pro_pic");
+           	   var mins =  localStorage.getItem("mins");
+               if(mins == "000"){
+              	 var mins11 = "0";
+               }
+           	   var m_name = localStorage.getItem("m_name");
+             	$('#rat-pic').css('background-image', 'url(' + pic + ')'); 
+              	$('#rat-msg').text('Rate '+m_name+''); 
+           	 
+           	  	
+        
+           	
+    	    	});
+             
+      });                              
+     $(document).on("pageshow","#home",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show"); 
+    	
+    	
+    	 
+    	
+    	
+     console.log(localStorage.getItem("logged-in"));
+     
+     console.log(localStorage.getItem("logged-inn"));
+     
+    	/*  if(localStorage.getItem("logged-in") == "true" && localStorage.getItem("logged-inn") == "true"){*/
+   		  
+    	console.log("Dhukbena"+localStorage.getItem("flaggg"));	  
+    	if(localStorage.getItem("flaggg") == "true"){
+    		 get_notifications();
+        	 
+    		  var ath = addToHomescreen({
+      		    skipFirstVisit: false,	// show at first access
+      		    startDelay: 0,          // display the message right away
+      		    lifespan: 0,            // do not automatically kill the call out
+      		    displayPace: 0,         // do not obey the display pace
+      		    privateModeOverride: true,	// show the message in private mode
+      		    maxDisplayCount: 1     // do not obey the max display count
+      		});
+      		
+      		
+      		
+      	
+       
+      	var count = 0;
+      	
+      	if(localStorage.getItem("count") > 0){
+      		
+      		
+      	}
+      	else{
+      		
+      		localStorage.setItem("count", "");
+          	localStorage.setItem("count", count);
+          	
+      	}
+      	
+      	 localStorage.setItem("req-time", "");
+      	 localStorage.setItem("flagg", "true");
+      	 localStorage.setItem("pay-check", "true");
+      	 localStorage.setItem("pay-check1", "");
+      	  // var check_first = localStorage.getItem("FIRST-LOGIN");
+      	   
+      	//   if(check_first == "true"){
+      		if(localStorage.getItem("count") == 0){
+      		   
+      		   swal({   title: 'Welcome to BOOKD!',  
+      			        //html:true,
+      			        html: '<ul class ="welcomemsg"><li>1.Simply enter your address at the top search bar.</li><li>2.Click the bottom bar that says "GIRLS AVAILABLE NOW".</li><li>3.Select a girl & time.</li><li>4.Pay the booking fee and have fun!</li></ul>',  
+      			    
+      			        imageUrl: 'img/flng-pop-logo.png',
+      			        showConfirmButton: true,
+      			        closeOnConfirm: true,
+      			        animation: true });
+      		   var count1 = ++count;
+      		//	alert(count1);
+  			    localStorage.setItem("count", count1);
+  				
+     		   
+      		}
+      		
+      		  
+      		  //  localStorage.setItem("FIRST-LOGIN","");
+      		   
+      	 //  }
+      	 
+
+           
+      	   localStorage.setItem("logged-inn","true");
+      	   localStorage.setItem("payment", "false");
+           $('#date_time').mobiscroll().time({
+   	        theme: 'android',   
+   	        mode: 'scroller',      
+   	        display: 'modal',
+   	       headerText: 'ENTER YOUR DESIRED MEETING TIME',
+   	       minWidth: 100
+   	                        
+   	    });
+           
+     	  $("#date_time").bind("change", function() {
+  	      // alert($(this).val()); 
+  	       
+  	       var time = $(this).val();
+  	       var hours = Number(time.match(/^(\d+)/)[1]);
+  	       var minutes = Number(time.match(/:(\d+)/)[1]);
+  	       var AMPM = time.match(/\s(.*)$/)[1];
+  	       if (AMPM == "PM" && hours < 12) hours = hours + 12;
+  	       if (AMPM == "AM" && hours == 12) hours = hours - 12;
+  	       var sHours = hours.toString();
+  	       var sMinutes = minutes.toString();
+  	       if (hours < 10) sHours = "0" + sHours;
+  	       if (minutes < 10) sMinutes = "0" + sMinutes;
+  	       //alert(sHours + ":" + sMinutes);
+  	        localStorage.setItem("flag", "true");
+  	       	localStorage.setItem("hrs", "");
+  			localStorage.setItem("mins","");
+  	    	localStorage.setItem("hrs", sHours);
+  			localStorage.setItem("mins",AddZero(sMinutes));
+  			localStorage.setItem("req-time","");
+  			localStorage.setItem("req-time",sHours + ":" + sMinutes);
+  		  
+  	     var lat = localStorage.getItem("lat");
+  		 var lon = localStorage.getItem("lon");
+  	    
+  		get_no_of_girls(lat , lon);
+  		
+  	 });
+  	 
+   	  
+      	 localStorage.setItem("flag11","false");
+      	// checkConnection();
+      	 $("#pac-input3").val(localStorage.getItem("ADDRESS-CUR"));
+      	 if(storeObject.search){
+      		 localStorage.setItem("add-usr",storeObject.search);
+      		  $("#pac-input3").val(storeObject.search);
+      	 }
+      	 else if(localStorage.getItem("ADDRESS-CUR")){
+      		 
+      		 $("#pac-input3").val(localStorage.getItem("ADDRESS-CUR"));
+      	 }
+        var ty = document.getElementById("pac-input3").value; 
+       /* if( localStorage.getItem("ADDRESS-CUR")!= ty)
+      		
+      	  getmap();*/
+      		
+      		
+      	
+      	/* $(document).on("popupafteropen", "#popupInfo",function( event, ui ) {
+  		       // alert('popup');
+  		      
+  		        var now = new Date();
+  		        var hrs = now.getHours();
+  		        var mins = now.getMinutes();
+  		   
+  		    	  
+  		    	  
+  		    	    $("#txt1").val(hrs);
+  			        $("#txt2").val(AddZero(mins));
+  		    
+  		      
+      	 }); */
+      	  
+      		
+       	 $(document).on("popupafteropen", "#popupInfo1",function( event, ui ) {
+   		       // alert('popup');
+   		       
+   		       
+   		       var hrss = localStorage.getItem("hrs");
+  		       var minss = localStorage.getItem("mins");
+  		       
+  		       if(hrss == '' && minss == ''){
+  		    	   
+  		    	   var now = new Date();
+  	 		        var hrs = now.getHours();
+  	 		        var mins = now.getMinutes();
+  	 		   
+  	 		    	  
+  	 		    	  
+  	 		    	    $("#txt11").val(hrs);
+  	 			        $("#txt22").val(AddZero(mins));
+  		    	   
+  		    	   
+  		       }
+  		       else{
+  		    	   
+  		    	   $("#txt11").val(hrss);
+  			        $("#txt22").val(AddZero(minss));
+  		    	   
+  		       }
+   		      
+   		     
+   		    
+   		      
+       	 }); 
+       	  
+      	  
+      	  
+     	 /* $(document).on("popupafteropen", "#messagepop",function( event, ui ) {
+  		       // alert('popup');
+  		      
+  		    	   var num = localStorage.getItem("no");
+  		    	  
+  		    	    $("#mobnum").val(no);
+  			        $("#writemsg").val();
+  			        
+  		    
+  		      
+    	 }); */
+     	  
+     	
+     	  
+      /* /* /* 	  $(document).on("popupafteropen", "#messagepop1",function( event, ui ) {
+  		       // alert('popup');
+  		      
+  		    	   var num = localStorage.getItem("no");
+  		    	  
+  		    	    $("#mobnum1").val(no);
+  			        $("#writemsg1").val();
+  			        
+  		    
+  		      
+     	 }); 
+      	  
+      	  $(document).on("popupafteropen", "#messagepop2",function( event, ui ) {
+  		       // alert('popup');
+  		      
+  		    	   var num = localStorage.getItem("no");
+  		    	  
+  		    	    $("#mobnum2").val(no);
+  			        $("#writemsg2").val();
+  			        
+  		    
+  		      
+    	 }); 
+      	  
+      	  $(document).on("popupafteropen", "#messagepop3",function( event, ui ) {
+  		       // alert('popup');
+  		      
+  		    	   var num = localStorage.getItem("no");
+  		    	  
+  		    	    $("#mobnum3").val(no);
+  			        $("#writemsg3").val();
+  			        
+  		    
+  		      
+    	 }); 
+      	  $(document).on("popupafteropen", "#messagepop4",function( event, ui ) {
+  		       // alert('popup');
+  		      
+  		    	   var num = localStorage.getItem("no");
+  		    	  
+  		    	    $("#mobnum4").val(no);
+  			        $("#writemsg4").val();
+  			        
+  		    
+  		      
+    	 }); */ 
+  		    /*  $(document).on("popupafterclose", "#messagepop",function( event, ui ) {
+  			       // alert('popup');
+  		    	  var num = localStorage.getItem("no");
+  		    	  
+  		    	    $("#mobnum").val(no);
+  			        $("#writemsg").val();
+  			       
+  			          
+  		        
+  		      });  */ 
+  		      
+      	
+      	
+      	/* else if(storeObject.search && localStorage.getItem("ADDRESS-CUR")){
+      		 
+      		 $("#pac-input3").val(localStorage.getItem("ADDRESS-CUR"));
+      		 
+      	 }*/
+      	 //alert(storeObject.search);
+      	
+      	 if(localStorage.getItem("home") == "true"){
+      		 $('.custom-loader').css({'display':'block'}); 
+      		 $('.my-location').css({'display':'block'});  
+      		 var home_add = go_home1();
+      		// alert(home_add);
+      		
+      		 $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+home_add+'&sensor=false', null, function (data) {
+      		        var p = data.results[0].geometry.location;
+      		        localStorage.setItem("ADDRESS-CUR", home_add);
+      		        $("#pac-input3").val(home_add);
+      		        localStorage.setItem("lat","");
+        		  	  localStorage.setItem("lon",  "");
+      		        localStorage.setItem("lat",p.lat);
+      		  	  localStorage.setItem("lon",  p.lng);
+      		        setTimeout(function() { $('#ico1').click(function(){
+      	    	        $('#autocomplete4').focus();
+      	    	     });
+      		        	get_no_of_girls(p.lat , p.lng);
+      		        }, 2000);
+      		        $('.custom-loader').css({'display':'none'}); 
+      		        show_map(p.lat , p.lng);
+      		      
+      		      //  localStorage.setItem("home", "false");
+      		       
+      		      
+      		}); 
+      			
+      		 
+      		 
+      	 }
+      	 
+      	 
+      	 else if(localStorage.getItem("work") == "true"){
+      		 $('.custom-loader').css({'display':'block'}); 
+      		 $('.my-location').css({'display':'block'});  
+      		 var work_add = go_work1();
+      		//alert(work_add);
+      		
+      		 $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+work_add+'&sensor=false', null, function (data) {
+      		        var p = data.results[0].geometry.location;
+      		        localStorage.setItem("ADDRESS-CUR", work_add);
+      		        $("#pac-input3").val(work_add);
+      		        localStorage.setItem("lat","");
+          		  	  localStorage.setItem("lon",  "");
+      		        localStorage.setItem("lat",p.lat);
+        		  	  localStorage.setItem("lon",  p.lng);
+      		        setTimeout(function() {
+      		        	get_no_of_girls(p.lat , p.lng);
+      		        }, 2000);
+      		        $('.custom-loader').css({'display':'none'}); 
+      		        show_map(p.lat , p.lng);
+      		      //  localStorage.setItem("home", "false");
+      		       
+      		      
+      		}); 
+      			
+      		 
+      		 
+      	 }
+      	
+      	 
+      	 else if(localStorage.getItem("hotel") == "true"){
+      		 $('.custom-loader').css({'display':'block'}); 
+      		 $('.my-location').css({'display':'block'});  
+      		 var hotel_add = go_hotel1();
+      		//alert(hotel_add);
+      	
+      		 $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+hotel_add+'&sensor=false', null, function (data) {
+      		        var p = data.results[0].geometry.location;
+      		        localStorage.setItem("ADDRESS-CUR", hotel_add);
+      		        $("#pac-input3").val(hotel_add);
+      		        localStorage.setItem("lat","");
+          		  	  localStorage.setItem("lon",  "");
+      		        localStorage.setItem("lat",p.lat);
+        		  	  localStorage.setItem("lon",  p.lng);
+
+      		        setTimeout(function() {
+      		        	get_no_of_girls(p.lat , p.lng);
+      		        }, 2000);
+      		        $('.custom-loader').css({'display':'none'}); 
+      		        show_map(p.lat , p.lng);
+      		      //  localStorage.setItem("home", "false");
+      		       
+      		      
+      		}); 
+      			
+      		 
+      		 
+      	 }
+      	 
+      	 
+      	 else if(localStorage.getItem("first") == "true"){
+      		 $('.my-location').css({'display':'block'});  
+      		 var add = localStorage.getItem("sel-add");
+      		  $("#pac-input3").val(add);
+      			 $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+add+'&sensor=false', null, function (data) {
+       		        var p = data.results[0].geometry.location;
+       		        
+       		        localStorage.setItem("lat","");
+           		  	  localStorage.setItem("lon",  "");
+       		        localStorage.setItem("lat",p.lat);
+         		  	  localStorage.setItem("lon",  p.lng);
+
+       		        setTimeout(function() {
+       		        	get_no_of_girls(p.lat , p.lng);
+       		        }, 2000);
+       		        $('.custom-loader').css({'display':'none'}); 
+       		        show_map(p.lat , p.lng);
+       		      //  localStorage.setItem("home", "false");
+       		       
+       		      
+       		}); 
+       			
+      		 
+      		 
+      		 
+      	 }
+      	 else{
+      		 $('.my-location').css({'display':'none'});  
+      		   localStorage.setItem("work", "");
+      		   localStorage.setItem("home", "");
+      		   localStorage.setItem("first", "");
+      		   localStorage.setItem("hotel", "");    		       		   localStorage.setItem("timeispassing","");    		   localStorage.setItem("timeispassing","true");    							  setTimeout(				    function(){				      if (localStorage.getItem("timeispassing") == "true") {				    	  localStorage.setItem("timeispassing","");				    	 localStorage.setItem("timeispassing","false");				        console.log("Waiting too much... Or did you say not now? :-P");				        				        ReverseGeocode("36.1699","-115.1398" );
+      		  localStorage.setItem("lat","");
+      		  localStorage.setItem("lon", "");
+      		  localStorage.setItem("lat","36.1699");
+      		  localStorage.setItem("lon","-115.1398");
+      		  
+      		  
+      		get_no_of_girls("36.1699","-115.1398");
+      		
+      		show_map("36.1699","-115.1398");				       /* localStorage.setItem("msg","It seems you did not share your location.");			             document.location.href = "404.html";*/				        }				      },				    10000				    );				
+      		 navigator.geolocation.getCurrentPosition(onSuccess, onError);    		
+      		 
+      	 }
+      	
+      		
+    	}  		
+      		//navigator.geolocation.watchPosition(onSuccess, onError, { enableHighAccuracy: true });
+      		
+      
+     
+  	
+      	 //test();	
+      
+   	/*       }
+   	   else {
+   		  
+   			
+   			$.mobile.changePage("#loginregister", {transition: "fade", reverse: false}, true, true);
+   		
+   	   }
+    	*/
+ 	    
+		
+    	});
+     
+     
+     
+     $(document).on("pageshow","#settings",function(){ // When entering pagetwo
+    	 localStorage.setItem("flagg","");
+     	    	 get_notifications();
+    	  
+    	  edit_details();
+    	 
+    	
+     	
+    	   
+      	          	
+    	});
+     
+     
+     
+     
+
+     $(document).on("pageshow","#removeplace5",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+     
+    	 //clearInterval(interval);
+    	get_notifications();
+    	 $("#home-add2").empty();
+		 $("#home-add2").prepend(localStorage.getItem("set-home"));
+    	
+    	});
+     
+     
+     $(document).on("pageshow","#removeplace6",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+     
+    	 //clearInterval(interval);
+    	get_notifications();
+    	 var work = localStorage.getItem("set-work");
+    	
+    	 $("#work-add2").empty();
+		 $("#work-add2").prepend(work);
+    	
+    	});
+     
+     
+     $(document).on("pageshow","#removeplace7",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+     
+    	 //clearInterval(interval);get_notifications();
+    
+    	 $("#hotel-add2").empty();
+		 $("#hotel-add2").prepend(localStorage.getItem("set-hotel"));
+    	
+    	});
+     
+
+     
+     
+     var home = localStorage.getItem("home-add1");
+     
+     
+     $(document).on("pageshow","#removeplacealter",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+     
+    	 //clearInterval(interval);
+    	// edit_details();
+    //	test();
+   // get();
+ localStorage.setItem("flagg","");
+    get_notifications();
+ 	
+    	init_final();
+    	//test();
+    	
+    	
+    	 $("#autocomplete4").val(localStorage.getItem("ADDRESS-CUR"));
+    	 $('#ico1').click(function(){
+    	        $('#autocomplete4').focus();
+    	     });
+    	   storeObject.search = $("#autocomplete").val();
+    	
+    	 var uid =  localStorage.getItem("UNIQUE-ID");
+    
+		 // alert(uid);	
+			jQuery.ajax({
+		           type: 'POST',
+		           beforeSend: function() {
+		         	 
+		        	 //  $('.custom-loader').css({'display':'block'});               
+		          
+		          }, //Show spinner
+		            complete: function() {
+		             
+		             setTimeout(function() {
+		            	// $('.custom-loader').css({'display':'none'}); 
+		                        }, 2000);
+		             
+		             
+		           }, //Hide spinner
+		             url: 'http://www.unifiedinfotech.co.in/webroot/team1/DatingApp/service_call/get_places',
+		             data: {
+		             tag: 'get_places',
+		             uid : uid,
+		           
+		            },
+		             
+		             success: function(response) {
+		            // alert(response);
+		             var jsObject = JSON.parse(response);
+		             var result = jsObject.status;
+		             var data_home = jsObject.data.home;
+		             var data_work = jsObject.data.work;
+		             var data_hotel = jsObject.data.hotel;
+		            // alert(data_work);
+		             //var girl_id = jsObject.data.id_params[0];
+		            // localStorage.setItem("girl_id", girl_id);
+		              if(result == 1){
+		            	  $("#home-add1").empty();  
+		            	  $("#work-add1").empty();  
+		            	  $("#hotel-add1").empty();  
+		            	  $("#home-add1").prepend(data_home);  
+		            	  $("#work-add1").prepend(data_work);  
+		            	  $("#hotel-add1").prepend(data_hotel);  
+		            	  localStorage.setItem("home-add", data_home);
+		            	  localStorage.setItem("work-add", data_work);
+		            	  localStorage.setItem("hotel-add", data_hotel);
+		            	  
+		            	  
+		            	  
+		            	  
+		              }
+		              else {
+		            	  
+		            	  swal("BOOKD", "Server problem!", "error");
+		            	  $.mobile.navigate("#home",{transition: "slide", reverse: false});
+		            	  
+		              }
+		             //	  swal("Flng", message, "success");
+		     		 //$("#home-add").empty();
+	        		 //$("#home-add").prepend(localStorage.getItem("random-add"));
+	        	
+	        		
+	        		
+		             	 // alert(localStorage.getItem("girl_id"));
+		                  //$.mobile.navigate("#login",{transition: "slide", reverse: false});
+		             
+		           
+		            
+		             },
+		             
+		             error: function (response) {
+		               // alert(JSON.stringify(response));
+		            	 //swal("Flng", "OOPS!.Something Went Wrong with the server.Try Again", "error");
+		             },
+		           
+		             
+		             });
+ 
+ 	   
+    	});
+     
+     
+     $(document).on("pageshow","#editaccount",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+     
+    	 //clearInterval(interval);
+    	       localStorage.setItem("flagg","");
+    	      get_notifications();
+    	 	  $("#first-name").val(localStorage.getItem("firstname1"));
+    	 	 $("#last-name").val(localStorage.getItem("firstname2"));
+           	  $("#edit-email").val(localStorage.getItem("firstname3"));
+           	  $("#edit-mobile").val(localStorage.getItem("firstname4"));
+           
+           	// $("#poster").attr("src",localStorage.getItem("img"));
+           //	$('#poster').attr("src",localStorage.getItem("img"));
+          // 	alert($('#poster').attr("src"));
+           	$('.account-thumb').css('background-image', 'url(' + localStorage.getItem("img") + ')');
+           	
+    	
+        
+           
+    	});
+     
+     
+     
+     $(document).on("pagehide","#home",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");  
+     
+    	 //clearInterval(interval);
+    	});
+     
+     $(document).on("pageshow","#removeplace1",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+    /*	 $('#ico2').click(function(){
+ 	        $('#autocomplete3').focus();
+ 	     });
+    	 
+    	 $('#ico3').click(function(){
+  	        $('#autocomplete3').focus();
+  	     });
+    	 
+    	 $('#ico4').click(function(){
+  	        $('#autocomplete3').focus();
+  	     });*/
+  	     
+  	   localStorage.setItem("edit", "");
+    	 $('#autocomplete3').val('');
+    	if(localStorage.getItem("home100") == "true"){
+    		
+    		 $('#place_title').empty();
+    		 $('#place_title').text('Add Home');
+    	}
+    	else if(localStorage.getItem("work100") == "true"){
+    		
+    		 $('#place_title').empty();
+    		 $('#place_title').text('Add Work');
+    		
+    	}
+    	else{
+    		
+    		 $('#place_title').empty();
+    		 $('#place_title').text('Add Hotel');
+    	}
+  	     
+    	
+    	});
+     
+     
+     $(document).on("pagehide","#removeplace1",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+    /*	 $('#ico2').click(function(){
+ 	        $('#autocomplete3').focus();
+ 	     });
+    	 
+    	 $('#ico3').click(function(){
+  	        $('#autocomplete3').focus();
+  	     });
+    	 
+    	 $('#ico4').click(function(){
+  	        $('#autocomplete3').focus();
+  	     });*/
+  	     
+  	   localStorage.setItem("edit", "");
+    	 $('#autocomplete3').val('');
+    	
+    	});
+     
+     
+    /* $(document).on("pagehide","#confirmation",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+    	 $.mobile.navigate("#rating",{transition: "slide", reverse: false});
+       
+    	
+    	});*/
+     
+    
+     
+     
+     $(document).on("pageshow","#removeplace2",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+    	
+    	
+    	});
+     
+     $(document).on("pageshow","#removeplace3",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+    	 localStorage.setItem("edit", "");
+      
+    	});
+     
+     
+     $(document).on("pageshow","#paymentconfirmation",function(){ // When entering pagetwo
+    	 //$.LoadingOverlay("show");   
+     //alert("00");get_notifications();
+      localStorage.setItem("flagg","");
+     localStorage.setItem("pay-check1", "");
+	 localStorage.setItem("pay-check", "");
+      $(document).on("popupafteropen", "#messagepop4",function( event, ui ) {
+	       // alert('popup');
+	      
+	    	   var num = localStorage.getItem("nuum");
+	    	 
+	    	    $("#mobnum4").val(num);
+		        $("#writemsg4").val();
+		        
+	    
+	      
+ });
+     
+    	
+ 	    	localStorage.setItem("callback", "");
+ 	    	getcarddetails();
+ 	    	
+ 	    	var NO = localStorage.getItem("NO");
+ 	    	
+ 	    	
+ 	    	
+ 	    	if(NO == null || NO == ''){
+ 	    	
+ 	    	$("#card_no").val("TAP TO ENTER CARD");
+ 	    	$("#type_card").empty();
+ 	   	    $("#type_card").append('<i class="fa fa-credit-card"></i>');
+ 	    	}
+ 	    	
+ 	    	else{
+ 	    		
+ 	       	$("#type_card").empty();
+ 	    	$("#type_card").append('<i class="fa fa-cc-'+localStorage.getItem("TYPE")+'"></i>');
+ 	    	$("#card_no").val(localStorage.getItem("NO").replace(/.(?=.{4})/g, '*'));
+ 	    		
+ 	    	}
+ 	    	var tot_time;
+ 	    	var cur_time = localStorage.getItem("cur-time");
+ 	    	var req_time = localStorage.getItem("req-time");
+ 	    	 
+ 		    //alert("first"+d1);
+ 		    //alert("second"+d2);
+ 	    	/* var a = cur_time.split(':'); // split it at the colons
+ 	    	 var b = req_time.split(':');
+ 	 	    // minutes are worth 60 seconds. Hours are worth 60 minutes.
+ 	 	  var seconds_cur = (+a[0]) * 60 * 60 + (+a[1]) * 60; 
+ 	 	  var seconds_req = (+b[0]) * 60 * 60 + (+b[1]) * 60; 
+          var diff_sec = seconds_req - seconds_cur;*/
+ 	 	 
+ 	 	 var b = calculateTime(cur_time , req_time);
+ 	 	// alert(b);
+ 	 	 var part = b.split(":");
+ 	      
+ 	 	 var part1 = part[0];
+ 	 	 var part2 = part[1];
+ 	 	 var msg;
+ 	 	 var msg1;
+ 	 	 if(part1 == 1 && part2 == 01){
+ 	 		 
+ 	 		 msg = "HOUR";
+ 	 		 msg1 = "MINUTE";
+ 	 	 }
+ 	 	 else if(part1 == 1){
+ 	 		 
+ 	 		 msg = "HOUR";
+ 	 		 msg1 = "MINUTES";
+ 	 	 }
+ 	 	 else if(part2 == 01){
+ 	 		 
+ 	 		msg = "HOURS";
+	 		 msg1 = "MINUTE";
+ 	 		 
+ 	 	 }
+ 	 	 else{
+ 	 		 
+ 	 		msg = "HOURS";
+	 		 msg1 = "MINUTES";
+ 	 		 
+ 	 	 }
+ 	 	
+ 	 	if(part2.substr(0, 1) == "0" && part2.substr(1, 2) != "0" && part2 > 20 && part1.substr(0, 1) != "0"){
+ 	 		//alert("55");
+ 	 		tot_time = part1 + " " + msg + " " + " " + part2.substr(1, 2) + " " + msg1;
+ 	 	} 
+ 	 	else if(part2.substr(0, 1) == "0" && part2.substr(1, 2) == "0" && part1.substr(0, 1) != "0"){
+ 	 		//alert("56");
+ 	 		tot_time = part1 + " " + msg;
+ 	 	}
+ 	 	else if(req_time == ''){
+ 	 		//alert("57");
+ 	 		tot_time = 20 + " " + "MINUTES";
+ 	 	}
+ 	 	else if(part1.substr(0, 1) == "0" && part2 < 20){
+ 	 		//alert("58");
+ 	 		tot_time = 20 + " " + msg1;
+ 	 		
+ 	 	}
+ 	 	
+     else if(part1.substr(0, 1) == "0" && part2 > 20){
+    		//alert("59");
+ 	 		tot_time = part2 + " " + msg1;
+ 	 		
+ 	 	}
+   else{
+	   
+		//alert("60");
+	tot_time = part1 + " " + msg + " " + " " + part2 + " " + msg1;
+        }
+ 	    
+ 	  
+ 	    	
+     localStorage.setItem("payment", "true");
+     	  $("#msg").empty();
+     	  $("#msg1").empty();
+     	 $(".text-uppercase").empty();
+     	  var girl_name = localStorage.getItem("gname"); 
+		  var fee =  localStorage.getItem("booking"); 
+     	  $("#msg").append('Once requested, your credit card will be charged a one-time <span class="text-pink">$'+fee+'</span> booking fee now and you can provide tips to <span class="text-pink">'+girl_name+'</span> when she arrives.');
+     	  $("#msg1").append('<a href="#" class="ui-btn ui-corner-all btn-pink" data-ajax="false" onclick="validatepayment();">Request '+girl_name+'</a>');
+     	 $(".text-uppercase").append(''+girl_name+' will arrive in approximately <span class="text-pink">'+tot_time+'</span>');
+    	 if(localStorage.getItem("home") == "true"){
+    		 //alert("00");
+    	 $('.custom-loader').css({'display':'block'}); 
+    		 
+    		 
+    		 
+    		 var home_add = go_home2();
+    		// alert(home_add);
+    		 $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+home_add+'&sensor=false', null, function (data) {
+    		        var p = data.results[0].geometry.location;
+    		        localStorage.setItem("ADDRESS-CUR", home_add);
+    		        $("#pac-input4").val(home_add);
+    		      
+    		       
+    		        $('.custom-loader').css({'display':'none'}); 
+    		        mappay(p.lat , p.lng);
+    		      //  localStorage.setItem("home", "false");
+    		       
+    		      
+    		}); 
+    			
+    		 
+    		 
+    	 }
+    	 
+    	 
+    	 else if(localStorage.getItem("work") == "true"){
+    		// alert("01");
+    		 $('.custom-loader').css({'display':'block'}); 
+    		 var work_add = go_work2();
+    		//alert(work_add);
+    		 $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+work_add+'&sensor=false', null, function (data) {
+    		        var p = data.results[0].geometry.location;
+    		        localStorage.setItem("ADDRESS-CUR", work_add);
+    		        $("#pac-input4").val(work_add);
+    		       
+
+    		        setTimeout(function() {
+    		        	//get_no_of_girls();
+    		        }, 2000);
+    		        $('.custom-loader').css({'display':'none'}); 
+    		        mappay(p.lat , p.lng);
+    		      //  localStorage.setItem("home", "false");
+    		       
+    		      
+    		}); 
+    			
+    		 
+    		 
+    	 }
+
+    	
+     	 
+    	 else if(localStorage.getItem("hotel") == "true"){
+    		 $('.custom-loader').css({'display':'block'});  
+    		 var hotel_add = go_hotel2();
+    		//alert(hotel_add);
+    		 $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+hotel_add+'&sensor=false', null, function (data) {
+    		        var p = data.results[0].geometry.location;
+    		        localStorage.setItem("ADDRESS-CUR", hotel_add);
+    		        $("#pac-input4").val(hotel_add);
+    		       
+
+    		        setTimeout(function() {
+    		        	//get_no_of_girls(p.lat , p.lng);
+    		        }, 2000);
+    		        $('.custom-loader').css({'display':'none'}); 
+    		        mappay(p.lat , p.lng);
+    		      //  localStorage.setItem("home", "false");
+    		       
+    		      
+    		}); 
+    			
+    		 
+    		 
+    	 }
+    	 
+    	 
+    	 
+    	 else if(localStorage.getItem("first") == "true"){
+    		 //alert("02");
+    		 var add = localStorage.getItem("sel-add");
+    		  $("#pac-input4").val(add);
+    		  
+		       
+    		  $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+add+'&sensor=false', null, function (data) {
+   		        var p = data.results[0].geometry.location;
+   		      
+   		        localStorage.setItem("lat","");
+       		  	  localStorage.setItem("lon",  "");
+   		        localStorage.setItem("lat",p.lat);
+     		  	  localStorage.setItem("lon",  p.lng);
+
+   		        setTimeout(function() {
+   		        	//get_no_of_girls(p.lat , p.lng);
+   		        }, 2000);
+   		        $('.custom-loader').css({'display':'none'}); 
+   		     mappay(p.lat , p.lng);
+   		      //  localStorage.setItem("home", "false");
+   		       
+   		      
+   		}); 
+   			
+  		 
+    		 
+    		 
+    	 }
+    	 else{
+    		 //alert("03");
+    		 //alert(localStorage.getItem("lat"));
+    		 var lat = localStorage.getItem("lat");
+    		 var lon = localStorage.getItem("lon")
+    		 localStorage.setItem("work", "");
+    		   localStorage.setItem("home", "");
+    		   localStorage.setItem("first", "");
+    		   $('.custom-loader').css({'display':'block'}); 
+    		   mappay(lat, lon);
+    	 }
+    	
+    		
+ 	  
+                 
+    	});
+     
+  
+     
+     
+    /*function opentooltip(){
+    	
+    	 $("#popupInfo").popup("open", {transition: 'pop', positionTo:'#time1'});
+    	 
+     }*/
+     
+   
+    </script>
+</head>
+<body>
+
+
+<div class="custom-loader" style="display: none;" data-role="none">
+ <div class="t-cel">
+  <div class="t-col">
+   <img alt="" src="img/loader.gif" width="50px" height="50px">
+  </div>
+ </div>
+</div>
+
+<!-- Start of Login-Register page -->
+<div data-role="page" id="loginregister">
+<div class="splash-screen">
+    	<div class="logo-wrap">
+        	<div class="logo"><img src="img/flng-logo.png" alt=""></div>
+            <div class="intro-text">Get it on..</div>
+            <div class="action-btns home-action">
+            	<a href="#login" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all btn-login">Login</a>
+                <a href="#register" data-transition="slide" class="ui-btn ui-btn-inline ui-corner-all btn-register btn-pink">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</div><!-- /page -->
+
+<!-- Start of Login page -->
+<div data-role="page" id="login">
+<div class="splash-screen">
+    	<div class="inner-wrap has-header">
+        	<div class="flng-header transp" data-role="header">
+                <a href="#" class="header-icon"><i class="fa fa-chevron-left" onclick="loginback();"></i></a>
+                <h1 class="header-logo"><img src="img/logo-header.png" alt=""></h1>
+            </div>
+            <div class="ui-content">
+            	<div class="login-form">
+                	<div class="form-row">
+                    	<input placeholder="Email Address" value="" type="email" class="form-control cs" id="Lemail">
+                    </div>
+                    <div class="form-row">
+                    	<input placeholder="Password" value="" type="password" class="form-control cs" id="Lpass">
+                    </div>
+                    <div class="form-row" style="margin-top:1.5em;">
+                        <a href="#"  class="ui-btn ui-corner-all btn-pink" onclick="login();">Login</a>
+                    </div>
+                    <div class="form-row">
+                    	<a href="#forgotpassword" data-transition="slide" class="constance-font">Forgot Password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /page -->
+
+<!-- Start of ForgotPassword page -->
+<div data-role="page" id="forgotpassword">
+<div class="splash-screen">
+    	<div class="inner-wrap has-header">
+        	<div class="flng-header transp" data-role="header">
+                <a href="#" class="header-icon" data-rel="back"><i class="fa fa-chevron-left"></i></a>
+                <h1 class="header-logo"><img src="img/logo-header.png" alt=""></h1>
+            </div>
+            <div class="ui-content">
+            	<div class="login-form">
+                	<div class="form-row">
+                    	<input placeholder="Email Address" value="" type="email" class="form-control cs" id="Femail">
+                    </div>
+                    <div class="form-row" style="margin-top:1.5em;">
+                    	<button class="ui-btn ui-corner-all btn-pink" onclick="forgot_pwd();" style="height:auto">Submit</button>
+                    </div>
+                    <div class="form-row">
+                    	<a href="#login" data-transition="slide" data-rel="back" class="constance-font">Return to Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /page -->
+
+
+<!-- Start of Change Password page -->
+<div data-role="page" id="changepassword">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="flng-header" data-role="header">    
+            <a href="#" class="header-icon ui-btn-left" data-rel="back"><i class="fa fa-chevron-left"></i></a>       
+            <h1>Change Password</h1>
+          
+        </div>
+        <div class="ui-content">
+        	<div class="change-pass">
+            	<div class="form-row">
+                	<label for="old-password">Old Password</label>
+					<input name="old-password" id="old-password" value="" type="password">
+                </div>
+                <div class="form-row">
+                	<label for="old-password">New Password</label>
+					<input name="new-password" id="new-password" value="" type="password">
+                </div>
+                <div class="form-row">
+                	<label for="old-password">Confirm New Password</label>
+					<input name="confirm-password" id="confirm-password" value="" type="password">
+                </div>
+                <div class="form-row">
+                	<a href="#" class="ui-btn ui-corner-all btn-pink" onclick="change_password();">Submit</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div><!-- /page -->
+
+
+<!-- Start of Register page -->
+<div data-role="page" id="register">
+<div class="splash-screen">
+    	<div class="inner-wrap has-header">
+        	<div class="flng-header transp" data-role="header">
+                <a href="#" class="header-icon" data-rel="back"><i class="fa fa-chevron-left"></i></a>
+                <h1 class="header-logo"><img src="img/logo-header.png" alt=""></h1>
+            </div>
+            <div class="ui-content">
+            	<div class="login-form">
+                	<div class="form-row">
+                    	<input placeholder="First Name" value="" type="text" class="form-control cs" id="fname" style =" text-transform: capitalize;">
+                    </div>
+                    <div class="form-row">
+                    	<input placeholder="Last Name" value="" type="text" class="form-control cs" id="lname" style =" text-transform: capitalize;">
+                    </div>
+                    <div class="form-row">
+                    	<input placeholder="Email Address" value="" type="email" class="form-control cs" id="email">
+                    </div>
+                    <div class="form-row">
+                    	<input placeholder="Phone Number" value="" type="number" class="form-control cs" id="phno">
+                    </div>
+                      <div class="form-row">
+                    	<input placeholder="DOB" value=""  class="form-control cs cs1" id="dob" >
+                    </div>
+                    <div class="form-row">
+                    	<label class="text-msg">Must be 21 or older to use BOOKD</label>
+                    </div>
+                    <div class="form-row">
+                    	<input placeholder="Password" value="" type="password" class="form-control cs" id="password">
+                    </div>
+                    <div class="form-row">
+                    	<input placeholder="Confirm Password" value="" type="password" class="form-control cs" id="cpassword">
+                    </div>
+                  
+                        <div class="form-row" id="terms1">
+                    	<label class="no-bg-label custom-check"><input value="" type="checkbox" id="terms" name="terms" data-role="none"><span>I ACCEPT TERMS AND PRIVACY</span></label>
+                    </div>
+                    <div class="form-row" style="margin-top:1.5em;">
+                    	<button class="ui-btn ui-corner-all btn-pink" onclick="signUp();"style="height:2.5em;">Sign Up</button>
+                    </div>
+                    <div class="form-row">
+                    	<a href="#login" data-transition="slide" class="constance-font" >Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /page -->
+
+<!-- Start of Home page -->
+<div data-role="page" id="home" style="margin:0;">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="flng-header" data-role="header">               
+            <h1>BOOKD</h1>
+            <a href="#nav-panel" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="ui-content map-container">
+        	<div class="map-search-field">
+            	<input type="text" placeholder="Enter Your Location" value="" class="form-control" id="pac-input3" readonly>
+                <button type="submit" class="search-btn" onclick="search();"><i class="fa fa-location-arrow"></i></button>
+            </div>
+           <!--   <div class="fixed-info">
+            	<span class="info-time"><i>4</i> min</span>
+                <span class="info-msg">Set Pickup Location</span>
+                <span class="info-arrow"><i class="fa fa-angle-right"></i></span>
+           </div> -->
+           <div class="my-location" onclick="take_home();"><i class="fa fa-compass" style="color:#FF69B4;"></i></div>
+          <div  id="map_canvas"></div>
+       <!--  <iframe src="" width="100%" height="100%" frameborder="0" style="border:0"  id="map_canvas"></iframe> -->
+        </div>
+        <div class="flng-home-footer line-two" data-role="footer" >
+        	<div class="search-result" id="searchres" onclick="iflisting();"><span id="girl-no">Girls available Now</span> <span class="click-view">Click to View</span></div><input type="text" id="date_time" data-role="none" readonly>
+        	
+        </div>
+        
+        
+    </div>
+  </div>  
+    <!-- Nav Panel -->
+	<div data-role="panel" id="nav-panel" class="nav-panel" data-position="right" data-display="push">
+    	<ul>
+    	    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+        	<li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#about" data-transition="slide"><i class="fa fa-info-circle"></i>About</a></li>
+            <li><a href="#notification" data-transition="slide"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+	</div> <!-- /Nav Panel -->
+	 <div data-role="popup" id="popupInfo" class="ui-content" data-theme="a"  data-overlay-theme="a">
+     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <div class="pop-time clearfix">
+         <div class="pop-hour"><input type="text" data-role="none" id="txt1" class="form-control" value="" placeholder="00"></div>
+            <div class="pop-blink">:</div>
+            <div class="pop-min"><input type="text" data-role="none" id="txt2" class="form-control" value="" placeholder="00"></div>
+        </div>
+        <hr>
+        <a href="#" class="ui-btn ui-corner-all btn-pink" onclick="done();">Done</a>
+    </div>
+    
+    
+     <div data-role="popup" id="popupInfo1" class="ui-content" data-theme="a"  data-overlay-theme="a">
+     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+        <div class="pop-time clearfix">
+         <div class="pop-hour"><input type="text" data-role="none" id="txt11" class="form-control" value="" placeholder="00"></div>
+            <div class="pop-blink">:</div>
+            <div class="pop-min"><input type="text" data-role="none" id="txt22" class="form-control" value="" placeholder="00"></div>
+        </div>
+        <hr>
+        <a href="#" class="ui-btn ui-corner-all btn-pink" onclick="done1();">Done</a>
+    </div>
+    
+    
+    <div data-role="popup" id="messagepop" class="ui-content" data-theme="a" data-overlay-theme="a">
+     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <div class="message-popup">
+         <div class="form-row">
+            <label>ADMIN NO:</label>    <input type="text" class="form-control no-bdr cs" id="mobnum" placeholder="Mobile Number" data-role="none" readonly>
+            </div>
+            <div class="form-row">
+                <textarea class="form-control cs" id="writemsg" placeholder="Write Message" data-role="none"></textarea>
+            </div>
+            <div class="form-row">
+                <a href="#" class="ui-btn ui-corner-all btn-pink" id="btnsnd">Send</a>
+            </div>
+        </div>
+    </div>
+	
+</div><!-- /page -->
+
+<!-- Start of Listing page -->
+<div data-role="page" id="listing" class="black-bg">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper nobg">
+        <div class="flng-header" data-role="header">
+        	<a href="#" class="header-icon ui-btn-left" onclick="go_home();"><i class="fa fa-chevron-left"></i></a>      
+            <h1>BOOKD</h1>
+            <a href="#nav-panel3" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a>
+        </div>
+         <div class="ui-content" id="content0">
+         <div class="listing-container">
+           <a href="#" class="need-time clearfix" data-role="none">
+            	<span class="pull-left lrg-font">I need a girl at</span>
+                <span class="pull-right book-time"><i class="fa fa-clock-o"></i> </span>
+            </a>
+            </div>
+             <div class="thumb-listing" id="content1">
+             <!--  <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-01.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">Mandy</span>
+                        <span class="model-age">22</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-02.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">jade</span>
+                        <span class="model-age">26</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-03.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">Lindsey</span>
+                        <span class="model-age">24</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-04.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">Mia</span>
+                        <span class="model-age">20</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-01.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">Mandy</span>
+                        <span class="model-age">22</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-02.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">jade</span>
+                        <span class="model-age">26</span>
+                    </figure>
+                </a>-->	
+            </div>
+          	<div class="not-available-cont">
+          		<div class="t-cel">
+          			<div class="t-col">
+          				<img alt="" src="img/not-available.png">
+          			</div>
+          		</div>
+          	</div>
+		</div>
+    </div>
+  </div>
+  <!-- Nav Panel -->
+	<div data-role="panel" id="nav-panel3" class="nav-panel" data-position="right" data-display="push">
+    	<ul>
+        	<li><a href="#home" data-transition="slide"><i class="fa fa-home"></i> Home</a></li>
+        	<li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#about" data-transition="slide"><i class="fa fa-info-circle"></i>About</a></li>
+            <li><a href="#notification"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+	</div> <!-- /Nav Panel -->
+</div><!-- /page -->
+
+
+<!-- Start of Details page -->
+<div data-role="page" id="details" class="black-bg">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper nobg">
+        <div class="flng-header" data-role="header">
+        	<a href="#" class="header-icon ui-btn-left" onclick="iflisting();"><i class="fa fa-chevron-left"></i></a>      
+            <h1 id="det-head"></h1>
+            <a href="#" class="header-icon ui-btn-right dist-away" style="top: 0.5em;"><span id="book_set"></span> </a>
+        </div>
+        <div class="ui-content details-ui-cont">
+        <div class="table-cont">
+        <div class="table-cont-row">
+        <div class="listing-container">
+        <div class="book-now-btn">
+        	<a href="#" data-ajax="false" class="ui-btn ui-corner-all btn-pink" onclick="book_girl();">Book Now!</a>
+        </div>	
+        </div>
+          
+          <div class="thumb-listing no-caption pic-gallery" id="cont">
+            <ul id="lightgallery" class="list-unstyled lightgallery">
+                  <li class="pic" data-src="img/girl-01.jpg" data-sub-html="<h4>Mandy</h4>">
+                    <a href="#" class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top">
+                        <img src="img/girl-01.jpg" alt="">
+                    </a>
+                </li>
+                <li class="pic" data-src="img/girl-1.01.jpg" data-sub-html="<h4>Mandy</h4>">
+                    <a href="#" class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top">
+                        <img src="img/girl-1.01.jpg" alt="">
+                    </a>
+                </li>
+                <li class="pic" data-src="img/girl-1.02.jpg" data-sub-html="<h4>Mandy</h4>">
+                    <a href="#" class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top">
+                        <img src="img/girl-1.02.jpg" alt="">
+                    </a>
+                </li>
+                <li class="pic" data-src="img/girl-1.03.jpg" data-sub-html="<h4>Mandy</h4>">
+                    <a href="" class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top">
+                        <img src="img/girl-1.03.jpg" alt="">
+                    </a>
+                </li>
+                <li class="pic" data-src="img/girl-1.04.jpg" data-sub-html="<h4>Mandy</h4>">
+                    <a href="#" class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top">
+                        <img src="img/girl-1.04.jpg" alt="">
+                    </a>
+                </li>
+                <li class="pic" data-src="img/girl-1.05.jpg" data-sub-html="<h4>Mandy</h4>">
+                    <a href="#" class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top">
+                        <img src="img/girl-1.05.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        
+        <!-- Slide form Bottom -->
+        <div class="table-cont-row bot">
+       <div class="bottom-slide">
+       	<div class="slide-trigger"></div>
+        <div class="model-details-row clearfix">
+        	<div class="col">
+            	<div class="label">Age</div>
+                <div class="info" id="slide-age"></div>
+            </div>
+            <div class="col">
+            	<div class="label">Height</div>
+                <div class="info" id="slide-height"></div>
+            </div>
+            <div class="col">
+            	<div class="label">Hair</div>
+                <div class="info" id="slide-hair"></div>
+            </div>
+            <div class="col">
+            	<div class="label">Booking Fee</div>
+                <div class="info" id="slide-fee"></div>
+            </div>
+        </div>
+        <div class="model-rating">
+        	<div class="rating-bg">
+            <!-- 	<i class="fa-star fa"></i><i class="fa-star fa"></i><i class="fa-star fa"></i><i class="fa-star fa"></i><i class="fa-star fa"></i> -->
+            </div>
+        </div>
+       	<p id="slide-bio"></p>
+       	<p class="book-now-footer">
+       		<a href="#" data-ajax="false" class="ui-btn ui-corner-all btn-white" onclick="book_girl();">Book Now!</a>
+       	</p>
+       </div>
+       <!--/.bottom-slide-->
+	   </div>
+       </div>
+       </div>
+    </div>
+  </div>
+</div><!-- /page -->
+
+
+<!-- Start of Standby page -->
+<div data-role="page" id="standby" class="black-bg">
+	<div class="splash-screen">
+      <div class="inner-wrap has-header">
+        <div class="flng-header" data-role="header">               
+            <h1>Standby</h1>
+             <a href="#nav-panel60" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a> 
+        </div>
+        <div class="transaction-top" style="top:0;">
+        	<div class="table-col">
+            	<div class="table-cel">
+                	<div class="pulse">
+                    	<div class="thumb imageFit" id="set-fit"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="payment-bottom conf-pay">
+            	<p>Waiting for confirmation...</p>
+                <p><a href="#" data-transition="slide" class="ui-btn ui-corner-all btn-pink" onclick="go_home();">Cancel *</a></p>
+               <p id="can-fee"></p>
+             	<div class="rate-bot">
+                <h2></h2>
+                <p>Questions?</p>
+                <div class="action-btns">
+                    <!--<a href="#" class="ui-btn ui-btn-inline ui-corner-all btn-pink" id="call3" style="min-width:3em;">Call Us</a>
+                    <a href="#" class="ui-btn ui-btn-inline ui-corner-all btn-pink" id="sms3" style="min-width:3em;">Text Us</a>-->
+                    <div style="padding:1em 0;">Please call us at <span class="text-call"></span> or text us.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div> 
+  
+   
+ 
+        
+        
+        
+        <div data-role="panel" id="nav-panel60" class="nav-panel" data-position="right" data-display="push">
+    	<ul>
+        	<li><a href="#home" data-transition="slide"><i class="fa fa-home"></i> Home</a></li>
+        	<li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#about" data-transition="slide"><i class="fa fa-info-circle"></i>About</a></li>
+            <li><a href="#notification" data-transition="slide"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+	</div> <!-- /Nav Panel -->
+	
+    
+</div><!-- /page -->
+</div>
+<!-- Start of Confirmation page -->
+<div data-role="page" id="confirmation" class="black-bg">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper nobg">
+        <div class="flng-header" data-role="header">               
+            <h1>Confirmation</h1>
+       <a href="#nav-panel2" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a>   
+        </div>
+        <div class="transaction-top" style="bottom: 13em;">
+        	<div class="table-col">
+            	<div class="table-cel">
+                    <div class="thumb" id="con-pic" style="width:7em; height: 7em;"></div>
+                    <div class="rate-wrap">
+                    	<h3>Confirmed !</h3>
+                        <p id="con-stat"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+               <div class="payment-bottom conf-pay">
+            	<p id="con-time"></p>
+                <p><a href="#" class="ui-btn ui-corner-all btn-pink" onclick="go_home();">Cancel *</a></p>
+                <p id="con-fee"></p>
+           
+            	<div class="rate-bot">
+                
+                <p>Questions?</p>
+                <div class="action-btns">
+                     <div style="padding:1em 0;">Please call us at <span class="text-call"></span> or text us.</div>
+                </div>
+            </div>
+        </div>  
+    </div>
+  </div>
+  <!-- Nav Panel -->
+	<div data-role="panel" id="nav-panel2" class="nav-panel" data-position="right" data-display="push">
+    	<ul>
+        	<li><a href="#home" data-transition="slide"><i class="fa fa-home"></i> Home</a></li>
+        	<li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#about" data-transition="slide"><i class="fa fa-info-circle"></i>About</a></li>
+            <li><a href="#notification" data-transition="slide"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+	</div> <!-- /Nav Panel -->
+	
+	  
+    <div  class = "messagepopup" data-role="popup" id="messagepop2" class="ui-content" data-theme="a" data-overlay-theme="a">
+     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <div class="message-popup">
+         <div class="form-row">
+            <label>GIRL NO:</label>    <input type="text" class="form-control no-bdr cs" id="mobnum2" placeholder="Mobile Number" data-role="none" readonly>
+            </div>
+            <div class="form-row">
+                <textarea class="form-control cs" id="writemsg2" placeholder="Write Message" data-role="none"></textarea>
+            </div>
+            <div class="form-row">
+                <a href="#" class="ui-btn ui-corner-all btn-pink" id="btnsnd2">Send</a>
+            </div>
+        </div>
+    </div>
+</div><!-- /page -->
+
+
+<!-- Start of Rating page -->
+<div data-role="page" id="rating" class="black-bg">
+	<div class="splash-screen">
+      <div class="inner-wrap has-header">
+        <div class="flng-header" data-role="header">               
+            <h1>Thanks</h1>
+            <a href="#" class="header-icon ui-btn-right" onclick="rat();"><i class="fa fa-home"></i></a>
+        </div>
+        <div class="transaction-top" style="top:0;">
+        	<div class="table-col">
+            	<div class="table-cel">
+                    <div class="thumb imageFit" id="rat-pic"></div>
+                    <div class="rate-wrap">
+                    	<h3 id ="rat-msg"></h3>
+                        <div class="rating-stars">
+                        	<div class="starrr" data-numstars="5" data-connected-input="rating"></div>
+                            <input type="hidden" name="rating" value="5" class="form-control" id="rat-val" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="transaction-bottom">
+        	<div class="inner-pad">
+            	<div class="rate-bot">
+                	<h2>Have Fun!</h2>
+                    <p>Questions?</p>
+                    <div class="action-btns">
+                        <div style="padding:1em 0;">Please call us at <span class="text-call"></span> or text us.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>  
+  
+    
+    <div class = "messagepopup" data-role="popup" id="messagepop3" class="ui-content" data-theme="a" data-overlay-theme="a">
+     <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+     <div class="message-popup">
+         <div class="form-row">
+            <label>GIRL NO:</label>    <input type="text" class="form-control no-bdr cs" id="mobnum3" placeholder="Mobile Number" data-role="none" readonly>
+            </div>
+            <div class="form-row">
+                <textarea class="form-control cs" id="writemsg3" placeholder="Write Message" data-role="none"></textarea>
+            </div>
+            <div class="form-row">
+                <a href="#" class="ui-btn ui-corner-all btn-pink" id="btnsnd3">Send</a>
+            </div>
+        </div>
+    </div>
+</div><!-- /page -->
+
+<!-- Start of Settings page -->
+<div data-role="page" id="settings">
+	<div class="splash-screen">
+      <div class="inner-wrap white ui-panel-wrapper">
+        <div class="flng-header" data-role="header">    
+            <a href="#home" class="header-icon ui-btn-left" data-transition="slide"><i class="fa fa-chevron-left"></i></a>       
+            <h1>Settings</h1>
+            <a href="#" class="header-icon ui-btn-right" id="ellipsis-handel"><i class="fa fa-ellipsis-v"></i></a>
+            <div id="ellipsis-menu" class="ellipsis-menu">
+            	<ul>
+                	<li><a href="#editaccount" data-transition="slide">Edit Account</a></li>
+                    <li><a href="#changepassword" data-transition="slide">Change Password</a></li>
+                    <li><a href="#" data-transition="fade" onclick="logout();">Sign Out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="account-thumb-wrapper">
+         <div class="account-thumb-placeholder">
+        <div class="account-thumb edit-pic" id="thumb-pic-set" ></div>
+        </div>
+        </div>
+        <div class="ui-content">
+        	<div class="change-pass" style="margin-top:20px;">
+            	<div class="form-row">
+                	<label for="full-name"> Name</label>
+					<input name="full-name" id="full-name" value="" type="text" readonly>
+                </div>
+                <div class="form-row">
+                	<label for="email">Email Address</label>
+					<input name="email" id="email-set" value="" type="email" readonly>
+                </div>
+                <div class="form-row">
+                	<label for="mobile">Mobile</label>
+					<input name="mobile" id="mobile" value="" type="text" readonly>
+                </div>
+            </div>
+            <div class="fav-places" id="fav">
+            	<!--  <h3>Favorite Places</h3>
+                <ul id="set-co">
+                	<li class="clearfix" id="set_home" onclick="set_ho();">
+                    	<div class="icon"><i class="fa fa-home"></i></div>
+                        <div class="place-name">Home</div>
+                        <div class="place-address" id="set-home"></div>
+                        <a href="#" class="edit-place" onclick="set_ho();"><i class="fa fa-pencil"></i></a>
+                    </li>
+                    <li class="clearfix" id="set_work" onclick="set_wo();">
+                    	<div class="icon"><i class="fa fa-briefcase"></i></div>
+                        <div class="place-name">Work</div>
+                        <div class="place-address" id="set-work"></div>
+                        <a href="#" class="edit-place" onclick="set_wo();"><i class="fa fa-pencil"></i></a>
+                    </li>
+                    <li class="clearfix" id="set_hotel" onclick="set_hot();">
+                    	<div class="icon"><i class="fa fa-building"></i></div>
+                        <div class="place-name" >Hotel</div>
+                        <div class="place-address"id="set-hotel"></div>
+                        <a href="#" class="edit-place" onclick="set_hot();"><i class="fa fa-pencil"></i></a>
+                    </li>
+                </ul>-->
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div><!-- /page -->
+
+<!-- Start of editAccount page -->
+<div data-role="page" id="editaccount">
+	<div class="splash-screen">
+      <div class="inner-wrap white ui-panel-wrapper">
+        <div class="flng-header" data-role="header">    
+            <a href="#" class="header-icon ui-btn-left" data-rel="back"><i class="fa fa-chevron-left"></i></a>       
+            <h1>Edit Account</h1>
+            <a href="#" class="header-icon ui-btn-right alt-icon"><i class="fa fa-camera"></i></a>
+            <a href="#" class="header-icon ui-btn-right" onclick="upload();"><i class="fa fa-check" ></i></a>
+        </div>
+        <div class="account-thumb-wrapper">
+        	<div class="imgpr"><input type="file" name="file"  id="imgpr" data-role="none" /></div>
+            <div class="account-thumb-placeholder">
+        	<div class="account-thumb edit-pic" id="thumb-pic-edit" style="background-image:url('');"></div>
+        	</div>
+        </div>
+        <div class="ui-content">
+        	<div class="change-pass" style="margin-top:20px;">
+            	<div class="form-row">
+                	<label for="first-name">First Name</label>
+					<input name="first-name" id="first-name" value="John" type="text">
+                </div>
+                <div class="form-row">
+                	<label for="last-name">Last Name</label>
+					<input name="last-name" id="last-name" value="Parker" type="text">
+                </div>
+                <div class="form-row">
+                	<label for="edit-email">Email Address</label>
+					<input name="edit-email" id="edit-email" value="john.parker@gmail.com" type="email">
+                </div>
+                <div class="form-row">
+                	<label for="edit-mobile">Mobile</label>
+					<input name="edit-mobile" id="edit-mobile" value="9836123456" type="number">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div><!-- /page -->
+
+<!-- Start of Remove Place page -->
+<div data-role="page" id="removeplace">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="ui-content">
+        	<div class="fav-places remove-place">
+                <ul>
+                	<li class="edit-place-field clearfix">
+                    	<div class="icon"><i class="fa fa-search"></i></div>
+                        <div class="form-row">
+                            <input placeholder="" value="" type="text" class="form-control cs" data-role="none" id="autocomplete">
+                        </div>
+                    </li>
+                	<li class="clearfix" id ="home_div" onclick="go_home1();" >
+                    	<div class="icon"><i class="fa fa-home"></i></div>
+                        <div class="place-name">Home</div>
+                        <div class="place-address" id="home-add"></div>
+                        <a href="#removeplace1" class="edit-place"><i class="fa fa-pencil"></i></a>
+                    </li>
+                    <li class="clearfix" id ="work_div" onclick="go_work1();">
+                    	<div class="icon"><i class="fa fa-briefcase"></i></div>
+                        <div class="place-name">Work</div>
+                        <div class="place-address" id="work-add"></div>
+                        
+                        <a href="#removeplace2" class="edit-place"><i class="fa fa-pencil"></i></a>
+                    </li>
+                    <li class="clearfix" id="hotel_div" onclick="go_hotel1();">
+                    	<div class="icon"><i class="fa fa-building"></i></div>
+                        <div class="place-name" >Hotel</div>
+                          <div class="place-address" id="hotel-add"></div>
+                        <a href="#removeplace3" class="edit-place"><i class="fa fa-pencil"></i></a>
+                    </li>
+                </ul>
+                <!--   <a href="#" class="ui-btn ui-corner-all btn-pink" onclick="save_add();" id="save">Save Address</a>-->
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div><!-- /page -->
+
+
+<!-- Start of Remove Place page -->
+<div data-role="page" id="removeplacealter">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+      	<div class="flng-header" data-role="header">    
+            <a href="#" class="header-icon ui-btn-left" onclick="go_home();"><i class="fa fa-chevron-left"></i></a>       
+            <h1>Add Place</h1>
+        </div>
+        <div class="ui-content">
+        	<div class="fav-places remove-place" style="margin-top:50px;">
+                <ul id="alterrem">
+                <!-- 	<li class="edit-place-field clearfix">
+                    	<div class="icon"><i class="fa fa-search"></i></div>
+                        <div class="form-row">
+                            <input placeholder="" value="" type="text" class="form-control cs" data-role="none" id="autocomplete4">
+                        </div>
+                    </li>
+                	 <li class="clearfix" id ="home_div" onclick="go_home1();" >
+                    	<div class="icon"><i class="fa fa-home"></i></div>
+                        <div class="place-name">Home</div>
+                        <div class="place-address" id="home-add"></div>
+                        <a href="#removeplace1" class="edit-place"><i class="fa fa-pencil"></i></a>
+                    </li>
+                    <li class="clearfix" id ="work_div" onclick="go_work1();">
+                    	<div class="icon"><i class="fa fa-briefcase"></i></div>
+                        <div class="place-name">Work</div>
+                        <div class="place-address" id="work-add"></div>
+                        
+                        <a href="#removeplace2" class="edit-place"><i class="fa fa-pencil"></i></a>
+                    </li>
+                    <li class="clearfix" id="hotel_div" onclick="go_hotel1();">
+                    	<div class="icon"><i class="fa fa-building"></i></div>
+                        <div class="place-name" >Hotel</div>
+                          <div class="place-address" id="hotel-add"></div>
+                        <a href="#removeplace3" class="edit-place"><i class="fa fa-pencil"></i></a>
+                    </li>-->
+                </ul>
+                <!--   <a href="#" class="ui-btn ui-corner-all btn-pink" onclick="save_add();" id="save">Save Address</a>-->
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div><!-- /page -->
+
+
+
+<!-- Start of Remove Place page -->
+<div data-role="page" id="removeplace1">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+      	<div class="flng-header" data-role="header">    
+            <a href="#" class="header-icon ui-btn-left" onclick="go_back22();"><i class="fa fa-chevron-left"></i></a>       
+            <h1 id="place_title"></h1>
+        </div>
+        <div class="ui-content">
+        	<div class="fav-places remove-place" style="margin-top:50px;">
+                <ul>
+                	<li class="edit-place-field clearfix">
+                    	<div class="icon" id="ico2"><i class="fa fa-search"></i></div>
+                        <div class="form-row">
+                            <input placeholder="" value="" type="text" class="form-control cs" data-role="none" id="autocomplete3">
+                        </div>
+                    </li>
+                   
+                	<!--    <li class="clearfix" id ="home_div">
+                    	<div class="icon"><i class="fa fa-home"></i></div>
+                        <div class="place-name">Home</div>
+                        <div class="place-address" id="home-add1"></div>
+                     <a href="#" class="edit-place"><i class="fa fa-pencil"></i></a>
+                    </li>-->
+            
+                </ul>
+                
+               <!-- <div id="dyn-div"><ul></ul></div>
+                 <a href="#" class="ui-btn ui-corner-all btn-pink" id="remove-home">Remove Home</a>
+            </div> -->
+        </div>
+        
+    </div>
+  </div>
+  </div>
+</div><!-- /page -->
+<!-- Start of Remove Place page -->
+<!-- Start of Remove Place page -->
+<div data-role="page" id="removeplace2">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="ui-content">
+        	<div class="fav-places remove-place">
+                <ul>
+                	<li class="edit-place-field clearfix">
+                    	<div class="icon"><i class="fa fa-search"></i></div>
+                        <div class="form-row">
+                            <input placeholder="" value="" type="text" class="form-control cs" data-role="none" id="autocomplete3">
+                        </div>
+                    </li>
+                	  <li class="clearfix" id ="work_div">
+                    	<div class="icon"><i class="fa fa-home"></i></div>
+                        <div class="place-name">WORk</div>
+                        <div class="place-address" id="work-add1"></div>
+                       <!--<a href="#" class="edit-place"><i class="fa fa-pencil"></i></a>-->
+                    </li>
+                  
+                </ul>
+               
+               <!-- <div id="dyn-div"><ul></ul></div>
+                 <a href="#" class="ui-btn ui-corner-all btn-pink" id="remove-home">Remove Home</a>
+            </div> -->
+        </div>
+        
+    </div>
+  </div>
+   </div>
+</div><!-- /page -->
+
+
+<!-- Start of Remove Place page -->
+<div data-role="page" id="removeplace3">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="ui-content">
+        	<div class="fav-places remove-place">
+                <ul>
+                	<li class="edit-place-field clearfix">4
+                    	<div class="icon"><i class="fa fa-search"></i></div>
+                        <div class="form-row">
+                            <input placeholder="" value="" type="text" class="form-control cs" data-role="none" id="autocomplete1">
+                        </div>
+                    </li>
+                	
+                   <li class="clearfix" id="hotel_div" >
+                    	<div class="icon"><i class="fa fa-building"></i></div>
+                        <div class="place-name" >Hotel</div>
+                          <div class="place-address" id="hotel-add1"></div>
+                        <!--  <a href="#" class="edit-place"><i class="fa fa-pencil"></i></a>--> 
+                    </li>
+                </ul>
+                 <!--   <a href="#" class="ui-btn ui-corner-all btn-pink" id="remove-hotel">Remove Hotel</a>--> 
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div><!-- /page -->
+
+
+<!-- Start of Remove Place page -->
+<div data-role="page" id="removeplace5">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+      <div class="flng-header" data-role="header">    
+            <a href="#" class="header-icon ui-btn-left" onclick="go_back222();"><i class="fa fa-chevron-left"></i></a>       
+            <h1>Edit Home</h1>
+        </div>
+        <div class="ui-content">
+        	<div class="fav-places remove-place" style="margin-top:50px;">
+                <ul>
+                	<li class="edit-place-field clearfix">
+                    	<div class="icon"><i class="fa fa-search"></i></div>
+                        <div class="form-row">
+                            <input placeholder="" value="" type="text" class="form-control cs" data-role="none" id="autocomplete8">
+                        </div>
+                    </li>
+                	
+                   <li class="clearfix" id="hotel_div" >
+                    	<div class="icon"><i class="fa fa-building"></i></div>
+                        <div class="place-name" >Home</div>
+                          <div class="place-address" id="home-add2"></div>
+                        <!--  <a href="#" class="edit-place"><i class="fa fa-pencil"></i></a>--> 
+                    </li>
+                </ul>
+                  <a href="#" class="ui-btn ui-corner-all btn-pink" id="remove-hotel" onclick="del_place('home');">Remove Home</a>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div><!-- /page -->
+
+<!-- Start of Remove Place page -->
+<div data-role="page" id="removeplace6">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+       <div class="flng-header" data-role="header">    
+            <a href="#" class="header-icon ui-btn-left" onclick="go_back222();"><i class="fa fa-chevron-left"></i></a>       
+            <h1>Edit Work</h1>
+        </div>
+        <div class="ui-content">
+        	<div class="fav-places remove-place" style="margin-top:50px;">
+                <ul>
+                	<li class="edit-place-field clearfix">
+                    	<div class="icon"><i class="fa fa-search"></i></div>
+                        <div class="form-row">
+                            <input placeholder="" value="" type="text" class="form-control cs" data-role="none" id="autocomplete9">
+                        </div>
+                    </li>
+                	
+                   <li class="clearfix" id="hotel_div" >
+                    	<div class="icon"><i class="fa fa-building"></i></div>
+                        <div class="place-name" >Work</div>
+                          <div class="place-address" id="work-add2"></div>
+                        <!--  <a href="#" class="edit-place"><i class="fa fa-pencil"></i></a>--> 
+                    </li>
+                </ul>
+                <a href="#" class="ui-btn ui-corner-all btn-pink" id="remove-hotel" onclick="del_place('work');">Remove Work</a>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div><!-- /page -->
+
+<!-- Start of Remove Place page -->
+<div data-role="page" id="removeplace7">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+       <div class="flng-header" data-role="header">    
+            <a href="#" class="header-icon ui-btn-left" onclick="go_back222();"><i class="fa fa-chevron-left"></i></a>       
+            <h1>Edit Hotel</h1>
+        </div>
+        <div class="ui-content">
+        	<div class="fav-places remove-place" style="margin-top:50px;">
+                <ul>
+                	<li class="edit-place-field clearfix">
+                    	<div class="icon"><i class="fa fa-search"></i></div>
+                        <div class="form-row">
+                            <input placeholder="" value="" type="text" class="form-control cs" data-role="none" id="autocomplete10">
+                        </div>
+                    </li>
+                	
+                   <li class="clearfix" id="hotel_div" >
+                    	<div class="icon"><i class="fa fa-building"></i></div>
+                        <div class="place-name" >Hotel</div>
+                          <div class="place-address" id="hotel-add2"></div>
+                        <!--  <a href="#" class="edit-place"><i class="fa fa-pencil"></i></a>--> 
+                    </li>
+                </ul>
+                   <a href="#" class="ui-btn ui-corner-all btn-pink" id="remove-hotel" onclick="del_place('hotel');">Remove Hotel</a>
+            </div>
+        </div>
+        
+    </div>
+  </div>
+</div><!-- /page -->
+
+
+<!-- Start of Payment Confirmation page -->
+<div data-role="page" id="paymentconfirmation" style="margin:0;">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="flng-header" data-role="header">
+        	<a href="#" class="header-icon ui-btn-left" id ="cancelpay"  style="font-size:1em;margin-top:.5em;">Cancel</a>           
+            <h1>Booking Confirmation</h1>
+            <a href="#nav-panel5" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="ui-content map-container">
+        	<div class="map-search-field">
+            	<input type="text" placeholder="Enter Your Location" value="" class="form-control" id="pac-input4" readonly onclick="search();">
+                <button type="submit" class="search-btn" onclick="search();"><i class="fa fa-location-arrow"></i></button>
+            </div>
+          <div id="map_can"></div> 
+        </div>
+        <div class="payment-bottom conf-pay" id="move_conf">
+            <div class="card-info clearfix">
+            	<div class="col" id="type_card">
+                	<i class="fa fa-cc-visa"></i>
+                </div>
+                <div class="col" >
+                	<input type="text" data-role="none" value="XXXXXXXXXXXX1221" class="form-control card-field" id="card_no" onclick="goedit();" readonly>
+                </div>
+                <div class="col" style="float:right; margin-right:2em;">
+                	<input type="tel" data-role="none" value="" placeholder="cvv number" class="form-control cvv-field" id="card_cvv" maxlength="3" onblur="validate_cvv();">
+                </div>
+                <a href="#" class="edit-cvv" onclick="goedit();" ><i class="fa fa-pencil"></i></a>
+            </div>
+            <p id="msg"></p>
+            <p id="msg1"></p>
+            <p class="text-uppercase"></p>
+            	<div class="rate-bot">
+          
+            </div>
+        </div>     
+    </div>
+  </div>  
+    <!-- Nav Panel -->
+	<div data-role="panel" id="nav-panel5" class="nav-panel" data-position="right" data-display="push">
+    	<ul>
+    	    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+        	<li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#about" data-transition="slide"><i class="fa fa-info-circle"></i>About</a></li>
+            <li><a href="#notification" data-transition="slide"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+	</div> <!-- /Nav Panel -->
+	
+</div><!-- /page -->
+
+
+
+<!-- Start of Suggest page -->
+<div data-role="page" id="suggest" class="black-bg">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper nobg">
+        <div class="flng-header" data-role="header">
+        	<a href="#" class="header-icon ui-btn-left" data-rel="back"><i class="fa fa-chevron-left"></i></a>
+            <h1>BOOKD</h1>
+            <a href="#nav-panel4" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="ui-content">
+        	<div class="suggestion-txt">
+            	<h2>Sorry...</h2>
+                <p id="text1">Looks like somthing happened with Mandy, but don't worry, we have a few other girls available (guaranteed) and for the inconvenience we will only charge you $100 for the one-time booking fee.</p>
+            </div>
+          
+            <!-- <div class="thumb-overlay"></div>-->
+            <div class="thumb-listing" id="content2">
+              <!--  <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-01.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">Mandy</span>
+                        <span class="model-age">22</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-02.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">jade</span>
+                        <span class="model-age">26</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-03.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">Lindsey</span>
+                        <span class="model-age">24</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-04.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">Mia</span>
+                        <span class="model-age">20</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-01.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">Mandy</span>
+                        <span class="model-age">22</span>
+                    </figure>
+                </a>
+                <a href="#details" class="pic" data-transition="slide">
+                    <span class="pagi-thumb imageFit" data-imgLiquid-verticalAlign="top"><img src="images/girl-02.jpg" alt="" /></span>
+                    <figure>
+                        <span class="model-name">jade</span>
+                        <span class="model-age">26</span>
+                    </figure>
+                </a> --> 
+            </div>
+          
+          	<a href="#" class="ui-btn ui-corner-all btn-pink" onclick="cancel_befreaproval();">Or Cancel for no charge</a>
+		</div>
+    </div>
+  </div>
+  <!-- Nav Panel -->
+	<div data-role="panel" id="nav-panel4" class="nav-panel" data-position="right" data-display="push">
+    	<ul>
+        	<li><a href="#home" data-transition="slide"><i class="fa fa-home"></i> Home</a></li>
+        	<li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#about" data-transition="slide"><i class="fa fa-info-circle"></i>About</a></li>
+            <li><a href="#notification"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+	</div> <!-- /Nav Panel -->
+</div><!-- /page -->
+
+
+<!-- Start of Privacy page -->
+<div data-role="page" id="privacy">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="flng-header" data-role="header">
+        	<a href="#" class="header-icon" data-rel="back"><i class="fa fa-chevron-left"></i></a>              
+            <h1>Privacy Policy</h1>
+           <!--   <a href="#nav-panel6" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a>-->
+        </div>
+        <div class="ui-content">
+			<div class="privacy-txt" id="priv">
+            	<!--  <h3>1. Aenean molestie ligula</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ligula sapien, id feugiat risus pretium ac. Ut dictum sem sit amet congue fringilla urna cursus posuere ullamcorper.</p>
+				<p>Curabitur convallis suscipit leo vehicula consectetur. Praesent quis sodales felis, a porta ante. Nam sodales facilisis eros in tempus. Aenean pulvinar imperdiet felis, porta vulputate nunc fermentum nec. In pellentesque lacus ac nisl posuere, a vestibulum velit tincidunt. Proin eu imperdiet sem.</p>
+                <h3>2. Nam sodales facilisis eros in tempus</h3>
+                <p>Curabitur convallis suscipit leo vehicula consectetur. Praesent quis sodales felis, a porta ante. Nam sodales facilisis eros in tempus. Aenean pulvinar imperdiet felis, porta vulputate nunc fermentum nec. In pellentesque lacus ac nisl posuere, a vestibulum velit tincidunt. Proin eu imperdiet sem.</p>
+                <p>Mauris ante quam, vulputate in sapien nec, fermentum mattis ante. Vivamus pretium fringilla felis. Suspendisse est neque, placerat a risus non, pellentesque feugiat enim. Nam pretium est sit amet metus ornare, eget faucibus sem pharetra. Donec metus orci, maximus ac orci in, tincidunt eleifend erat.</p>
+                <h3>3. Mauris ante quam vulputate</h3>
+                <p>Praesent quis sodales felis, a porta ante. Nam sodales facilisis eros in tempus. Aenean pulvinar imperdiet felis, porta vulputate nunc fermentum nec. In pellentesque lacus ac nisl posuere, a vestibulum velit tincidunt. Proin eu imperdiet sem convallis suscipit leo vehicula consectetur.</p>
+                <p>Mauris ante quam, vulputate in sapien nec, fermentum mattis ante. Vivamus pretium fringilla felis. Suspendisse est neque, placerat a risus non, pellentesque feugiat enim. Nam pretium est sit amet metus ornare, eget faucibus sem pharetra. Donec metus orci, maximus ac orci in, tincidunt eleifend sit amet metus ornare.</p>-->
+            </div>
+        </div>        
+    </div>
+  </div>  
+    <!-- Nav Panel -->
+	 <!-- <div data-role="panel" id="nav-panel6" class="nav-panel" data-position="right" data-display="push">
+    	<ul>
+    	    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+        	<li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#help" data-transition="slide"><i class="fa fa-info-circle"></i> Help</a></li>
+            <li><a href="#notification" data-transition="slide"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+	</div> <!-- /Nav Panel -->
+</div><!-- /page -->
+
+<!-- Start of about page -->
+<div data-role="page" id="about">
+  <div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="flng-header" data-role="header">
+          <a href="#" class="header-icon" data-rel="back"><i class="fa fa-chevron-left"></i></a>              
+            <h1>About Us</h1>
+              <a href="#nav-panel11" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="ui-content">
+      <div class="privacy-txt" id="aboutt">
+              <!--  <h3>1. Aenean molestie ligula</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie ligula sapien, id feugiat risus pretium ac. Ut dictum sem sit amet congue fringilla urna cursus posuere ullamcorper.</p>
+        <p>Curabitur convallis suscipit leo vehicula consectetur. Praesent quis sodales felis, a porta ante. Nam sodales facilisis eros in tempus. Aenean pulvinar imperdiet felis, porta vulputate nunc fermentum nec. In pellentesque lacus ac nisl posuere, a vestibulum velit tincidunt. Proin eu imperdiet sem.</p>
+                <h3>2. Nam sodales facilisis eros in tempus</h3>
+                <p>Curabitur convallis suscipit leo vehicula consectetur. Praesent quis sodales felis, a porta ante. Nam sodales facilisis eros in tempus. Aenean pulvinar imperdiet felis, porta vulputate nunc fermentum nec. In pellentesque lacus ac nisl posuere, a vestibulum velit tincidunt. Proin eu imperdiet sem.</p>
+                <p>Mauris ante quam, vulputate in sapien nec, fermentum mattis ante. Vivamus pretium fringilla felis. Suspendisse est neque, placerat a risus non, pellentesque feugiat enim. Nam pretium est sit amet metus ornare, eget faucibus sem pharetra. Donec metus orci, maximus ac orci in, tincidunt eleifend erat.</p>
+                <h3>3. Mauris ante quam vulputate</h3>
+                <p>Praesent quis sodales felis, a porta ante. Nam sodales facilisis eros in tempus. Aenean pulvinar imperdiet felis, porta vulputate nunc fermentum nec. In pellentesque lacus ac nisl posuere, a vestibulum velit tincidunt. Proin eu imperdiet sem convallis suscipit leo vehicula consectetur.</p>
+                <p>Mauris ante quam, vulputate in sapien nec, fermentum mattis ante. Vivamus pretium fringilla felis. Suspendisse est neque, placerat a risus non, pellentesque feugiat enim. Nam pretium est sit amet metus ornare, eget faucibus sem pharetra. Donec metus orci, maximus ac orci in, tincidunt eleifend sit amet metus ornare.</p>-->
+            </div>
+        </div>        
+    </div>
+  </div>  
+    <!-- Nav Panel -->
+   <div data-role="panel" id="nav-panel11" class="nav-panel" data-position="right" data-display="push">
+      <ul>
+          <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#about" data-transition="slide"><i class="fa fa-info-circle"></i> About</a></li>
+            <li><a href="#notification" data-transition="slide"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+  </div> <!-- /Nav Panel-->
+
+</div><!-- /page -->
+
+<!-- Start of Payment page -->
+<div data-role="page" id="payment">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="flng-header" data-role="header">
+        	<a href="#" class="header-icon" data-rel="back"><i class="fa fa-chevron-left"></i></a>              
+            <h1>Payment</h1>
+            <a href="#nav-panel8" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="ui-content">
+            <div class="saved-cards">
+            	<ul id="get_card">
+                    <!--<li class="no-save-card">Please add a card</li>-->
+                  <!--<li class="active-card"><i class="fa fa-cc-visa"></i> XXXXXXXXXXXX1221 <a href="#" class="remove-card"><i class="fa fa-times"></i></a></li>
+                    <li><i class="fa fa-cc-mastercard"></i> XXXXXXXXXXXX1221 <a href="#" class="remove-card"><i class="fa fa-times"></i></a></li>-->
+                   
+                </ul>
+                 <a class="btn-pink ui-btn ui-corner-all" href="#newcard" data-transition="slide" >Add New Card</a>
+            </div>
+        </div>        
+    </div>
+  </div>  
+    <!-- Nav Panel -->
+	<div data-role="panel" id="nav-panel8" class="nav-panel" data-position="right" data-display="push">
+    	<ul>
+    	    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+        	<li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#about" data-transition="slide"><i class="fa fa-info-circle"></i>About</a></li>
+            <li><a href="#notification" data-transition="slide"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+	</div> <!-- /Nav Panel -->
+</div><!-- /page -->
+
+<!-- Start of New Card page -->
+<div data-role="page" id="newcard">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="flng-header" data-role="header">
+        	<a href="#" class="header-icon" onclick="newcard();"><i class="fa fa-chevron-left"></i></a>              
+            <h1>Payment</h1>
+            <!--<a href="#" class="header-icon ui-btn-right" onclick="save_payment();"><i class="fa fa-check"></i></a>-->
+        </div>
+        <div class="ui-content"  style="overflow:visible;">
+            <div class="add-card clearfix">
+            	<div class="form-row full-width">
+            	<span class="card-holder"><i class="fa fa-credit-card"></i></span>
+            		<input type="tel" placeholder="Enter your card number" id="card" maxlength="19" >
+                </div>
+                <div class="clearfix">
+                    <div class="form-row half-width pull-left">
+                        <input  placeholder="Expiration Month"  id="card_month" value="" >
+                    </div>
+                    <div class="form-row half-width pull-right">
+                        <input  placeholder="Expiration Year"  id="card_year" value="" >
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="form-row half-width pull-left">
+                       <div class="form-item">
+                            <input id="country_selector" type="text" readonly>
+                            <label for="countryy_selector" style="display:none;">Select a country here...</label>
+                        </div>
+                    </div>
+                    <div class="form-row half-width pull-right">
+                        <input type="number" placeholder="Zip" id="zip" >
+                    </div>
+                </div>
+                <div class="form-row">
+                	<button class="btn-pink ui-btn" style="height:2.5em;" onclick="save_payment();">Save</button>
+                </div>
+            </div>
+        </div>        
+    </div>
+  </div>
+</div><!-- /page -->
+
+<!-- Start of Notification page -->
+<div data-role="page" id="notification">
+	<div class="splash-screen">
+      <div class="inner-wrap ui-panel-wrapper">
+        <div class="flng-header" data-role="header">
+        	<a href="#" class="header-icon" data-rel="back"><i class="fa fa-chevron-left"></i></a>              
+            <h1>Notification</h1>
+            <a href="#nav-panel9" class="header-icon ui-btn-right"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="ui-content">
+            <div class="noti-list">
+            	<ul id="noti_req">
+                	 <!--   <li>
+                      	<div class="noti-thumb" style="background-image:url();"></div>
+                    	<h3 class="noti-heading">Notification Title</h3>
+                        <p class="short-desc">Lorem Ipsum is simply dummy text of the printing.</p>
+                        <span class="noti-date">2 min ago</span>
+                    </li>
+                    <li>
+                    	<h3 class="noti-heading">Notification Title</h3>
+                        <p class="short-desc">Lorem Ipsum is simply dummy text of the printing.</p>
+                        <span class="noti-date">5 min ago</span>
+                    </li>
+                    <li>
+                    	<h3 class="noti-heading">Notification Title</h3>
+                        <p class="short-desc">Lorem Ipsum is simply dummy text of the printing.</p>
+                        <span class="noti-date">10 hours ago</span>
+                    </li>
+                    <li>
+                    	<h3 class="noti-heading">Notification Title</h3>
+                        <p class="short-desc">Lorem Ipsum is simply dummy text of the printing.</p>
+                        <span class="noti-date">25 Apr, 2016</span>
+                    </li>-->
+                </ul>
+            </div>
+        </div>        
+    </div>
+  </div>  
+    <!-- Nav Panel -->
+	<div data-role="panel" id="nav-panel9" class="nav-panel" data-position="right" data-display="push">
+    	<ul>
+    	    <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+        	<li><a href="#payment" data-transition="slide"><i class="fa fa-credit-card"></i> Payment</a></li>
+            <li><a href="#about" data-transition="slide"><i class="fa fa-info-circle"></i>About</a></li>
+            <li><a href="#notification" data-transition="slide"><i class="fa fa-bell"></i> Notifications</a><span class="count" id="not">0</span></li>
+            <li><a href="#settings" data-transition="slide"><i class="fa fa-cog"></i> Settings</a></li>
+            <li><a href="#privacy" data-transition="slide"><i class="fa fa-lock"></i> Privacy</a></li>
+        </ul>
+	</div> <!-- /Nav Panel -->
+</div><!-- /page -->
+
+</body></html>

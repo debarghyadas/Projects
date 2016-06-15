@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Google Maps - jQuery Mobile Demos</title>
+	<link rel="stylesheet" href="http://demos.jquerymobile.com/1.4.0/css/themes/default/jquery.mobile-1.4.0.min.css">
+	 <link rel="stylesheet" type="text/css" href="css/main.css" />
+	<style>
+	  #map-page, #map-canvas { width: 100%; height: 100%; padding: 0; }
+	      
+      .controls
+      {
+        margin-top: 16px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+    		
+	</style>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/index.js" ></script> 
+     <script src="js/jquery.city-autocomplete.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/File.js"></script>   
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <script src="http://maps.google.com/maps/api/js?libraries=places&sensor=true"></script>
+    
+   
+   <script>
+      
+		$(document).ready(function () 
+		{
+		 document.addEventListener("backbutton", function(e){ 
+		 
+		 },false);
+		 
+            var map;
+            var p;
+		    var elevator;
+		    var bounds = new google.maps.LatLngBounds();
+		    var marker =[];
+		    
+            var my_location = localStorage.getItem("ADD-ROOM");		   
+            $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address='+my_location+'&sensor=false', null, function (data) {
+                    var p = data.results[0].geometry.location             
+                     var latlng = new google.maps.LatLng(p.lat, p.lng);
+                     var myOptions = {
+		        zoom: 9,
+		        center: new google.maps.LatLng(p.lat, p.lng),
+		        panControl: true,
+		        mapTypeId: 'roadmap'
+		    };
+		    map = new google.maps.Map($('#map-canvas')[0], myOptions);
+                      marker =  new google.maps.Marker({
+                        position: latlng,
+                        icon: 'img/home1.png',
+                        title: data.results[0],
+                        map: map
+                    });
+                   
+               
+                    bounds.extend(latlng);
+            });
+          
+			
+			 
+		}); 
+		
+			
+   
+	</script>
+</head>
+<body>
+	<div data-role="page" id="map-page" data-url="map-page">
+	<div data-role="header" class="header">
+            <div class="top">
+                <a href="#" data-role="none" onclick="backmap();"><img src="img/arrow.png" alt="" /></a>
+                <h2>Map</h2></div>
+        </div>
+       
+	    <div role="main" class="ui-content" id="map-canvas"> </div>
+		
+	</div>
+
+</body>
+</html>

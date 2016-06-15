@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received" onClick="init();">Register Device </p>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+		function init(){
+			alert("Calling function to register mobile device on GCM");
+			window.plugins.pushNotification.register(
+			successHandler,
+			errorHandler,
+			{"senderID":"986010700923",
+			 "ecb":"onNotificationGCM"
+			});	
+		}
+		function successHandler(result){
+		alert("Result" + result);		
+		}
+		function errorHandler(error){
+		alert("error"+ result);
+		}
+		function onNotificationGCM(e){
+		alert("Message : " + e.event );
+		switch(e.event){
+			case 'registered':
+				alert("ID: " + e.regid);
+				//sendRequest(e.regid);
+				alert("Successfully Registered");
+				break;
+			case 'message':	
+				alert("Message: "+ e.payload.message);
+				var sound = new Media("assets/www/"+e.soundname);
+				sound.play();	
+				break;
+			default:
+				alert("unknown event");
+		}
+		}
+		//use to send registration ID returned by GCM to our local php server
+		//regID should be save in our local database so that we can use regID and api-key from google to sent request to GCM
+		//from php server in mycase.
+		function sendRequest(regID){
+		alert("sending request ..");
+		$.post("http://192.168.1.70/phpgcmserver/register.php",
+			{
+			regID:regID,
+			name:"jitendra",
+			email:"jiten.ktm@gmail.com"
+			});
+		}
+        </script>
+    </body>
+</html>

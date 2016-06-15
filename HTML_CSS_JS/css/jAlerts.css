@@ -1,0 +1,11 @@
+@charset: "UTF-8";
+.jAlertsMessage {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.jAlertsMessage, .jAlertsMessage h2, .jAlertsMessage p, .jAlertsButton {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+}
+.jAlertsMessage h2 { font-size: 22px; }
