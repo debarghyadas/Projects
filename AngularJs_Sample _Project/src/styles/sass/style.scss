@@ -1,0 +1,504 @@
+//colors
+$color_red_violet_approx: #bb207b;
+$white: #fff;
+$black: #000;
+$color_star_dust_approx: #a0a0a0;
+$color_cerise_approx: #dd1f83;
+$color_plum_approx: #862a85;
+$color_cape_cod_approx: #434343;
+$color_storm_dust_approx: #666;
+$color_black_haze_approx: #f7f7f7;
+$color_mountain_mist_approx: #969696;
+$color_rose_approx: #e8128a;
+$color_alto_approx: #dfdede;
+$color_tundora_approx: #464646;
+$color_cararra_approx: #ebe9eb;
+$color_log_cabin_approx: #222;
+$color_rose_30_approx: rgba(232,18,138,0.3);
+$color_rose_40_approx: rgba(232,18,138,0.4);
+$color_iron_approx: #d6d6d6;
+$color_delta_approx: #a2a2a2;
+$color_masala_80_approx: rgba(62,62,62,0.8);
+$color_masala_approx: rgba(62,62,62,1);
+
+//fonts
+$font_0: Arial;
+$font_1: Helvetica;
+$font_2: sans-serif;
+
+//urls
+$url_0: url(//demosthenes.info/assets/images/polina.jpg);
+$url_1: url(../../assets/images/gradient.jpg);
+$url_2: url(../../assets/images/park-area-object.png);
+$url_3: url(../../assets/images/search-icon-black.png);
+$url_4: url(../../assets/images/map-iconset.png);
+
+body {
+	margin: 0;
+	font-family: $font_0, $font_1, $font_2;
+}
+.nospace {
+	margin: 0;
+	padding: 0;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.video-js {
+	position: relative !important;
+	width: 100% !important;
+}
+.vjs-poster {
+	position: absolute !important;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.main {
+	width: 1270px;
+	margin: auto;
+	padding: 0;
+}
+.smallMain {
+	width: 1000px;
+	margin: auto;
+	padding: 0;
+}
+video {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: translateX(-50%) translateY(0%);
+	background: $url_0 no-repeat;
+	background-size: cover;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: 1s opacity;
+}
+.stopfade {
+	opacity: .5;
+}
+.headerText {
+	border-top: 6px solid $color_red_violet_approx;
+	padding: 2% 0 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	background: transparent;
+}
+.logo {
+	width: 20%;
+}
+.nav {
+	width: 60%;
+	ul li {
+		float: left;
+		list-style: none;
+		width: 13%;
+		border-right: 1px solid $white;
+		padding: 0 3%;
+		text-align: center;
+		&:last-child {
+			border-right: none;
+		}
+		a {
+			text-decoration: none;
+			display: inline-block;
+			text-transform: uppercase;
+			color: $white;
+			font-weight: bold;
+			font-size: 15px;
+			vertical-align: middle;
+			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			text-shadow: 1px 0 $black;
+		}
+	}
+}
+.labels {
+	background-color: $black;
+}
+.bannerText {
+	margin: 60px 0;
+	text-align: center;
+	h1 {
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+	h2 {
+		font-size: 93px;
+		font-weight: normal;
+		color: $color_star_dust_approx;
+	}
+	span {
+		font-weight: bold;
+		color: $color_cerise_approx;
+	}
+	h3 {
+		color: $color_plum_approx;
+		font-size: 93px;
+	}
+}
+.savetime {
+	font-size: 25px;
+	color: $color_cape_cod_approx;
+	padding: 10px 0;
+}
+.totalSaved {
+	font-size: 20px;
+	text-transform: uppercase;
+	color: $color_storm_dust_approx;
+}
+.choosePark {
+	background: $url_1;
+	color: $white;
+	text-align: center;
+	margin: -4px 0 0;
+	padding: 35px 0;
+	h1 {
+		font-size: 32px;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	input {
+		border: 2px solid $white;
+		background: none;
+		padding: 15px;
+		outline: 0;
+		color: $white;
+		text-transform: uppercase;
+		width: 20%;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 5px;
+		font-size: 17px;
+		font-weight: bold;
+		margin: 20px 0;
+		cursor: pointer;
+	}
+}
+.textMeApp {
+	background: $color_black_haze_approx $url_2 645px no-repeat;
+	height: 621px;
+}
+.textArea {
+	width: 500px;
+	padding: 167px 0 0;
+	h1 {
+		font-size: 26px;
+		text-transform: uppercase;
+	}
+	p {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 22px;
+	}
+}
+input {
+	&.enterNo {
+		border: 1px solid $color_mountain_mist_approx;
+		background: none;
+		padding: 15px;
+		text-transform: uppercase;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer;
+		outline: none;
+		margin: 20px 0;
+	}
+	&.appText {
+		background: $color_rose_approx;
+		border: none;
+		width: 96%;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 4px;
+		color: $white;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 15px;
+		cursor: pointer;
+		outline: none;
+		margin: 0 0 20px;
+	}
+}
+.testimonialLeft {
+	width: 580px;
+	border-right: 2px solid $color_alto_approx;
+	padding: 50px 50px 0 30px;
+	text-align: center;
+	p {
+		font-size: 15px;
+		font-weight: bold;
+		padding: 10px 0 0;
+	}
+}
+.owlContent {
+	width: 530px;
+	padding: 50px 30px 0 0;
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+}
+.contentGeneral {
+	font-size: 27px !important;
+}
+.serves {
+	padding: 50px 0 10px;
+}
+.owlInner {
+	margin: 60px 0 0;
+}
+.leftArrow {
+	margin: 85px 0;
+	width: 100px;
+}
+.rightArrow {
+	margin: 85px 0;
+	width: 100px;
+}
+.innerContent {
+	width: 330px;
+	h1 {
+		font-size: 20px;
+		font-weight: normal;
+	}
+	p {
+		font-size: 15px;
+	}
+}
+.borderBottom {
+	border-top: 1px solid $color_alto_approx;
+	margin: 0 100px 60px;
+}
+.ourPartner {
+	text-align: center;
+	padding: 0 0 60px;
+	h1 {
+		font-weight: normal;
+		color: $color_tundora_approx;
+	}
+}
+.partnerLogo {
+	padding: 100px 0 0;
+	ul li {
+		list-style: none;
+		float: left;
+		width: 250px;
+		text-align: center;
+	}
+}
+.bottmNav {
+	border-top: 1px solid $color_cararra_approx;
+	padding: 30px 0;
+	margin: 0 174px;
+}
+.search {
+	width: 300px;
+	input {
+		width: 100%;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 50px;
+		border: none;
+		padding: 15px 20px;
+		color: $color_mountain_mist_approx;
+		font-size: 17px;
+		background: $color_alto_approx $url_3 95% no-repeat;
+		background-size: 7%;
+		outline: 0;
+	}
+}
+.navLinks {
+	padding: 15px 0 0;
+	ul li {
+		color: $color_log_cabin_approx;
+		list-style: none;
+		float: left;
+		width: 135px;
+		border-right: 2px solid $color_alto_approx;
+		text-align: center;
+		font-size: 20px;
+		a {
+			color: $color_log_cabin_approx;
+			text-decoration: none;
+		}
+	}
+}
+.footer {
+	background: $color_alto_approx;
+	padding: 20px 0;
+}
+.copyRight {
+	color: $color_mountain_mist_approx;
+	font-size: 18px;
+	padding: 10px 0;
+}
+.pulse {
+	width: 10px;
+	height: 10px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 100%;
+	background-color: $color_rose_approx;
+	z-index: 10;
+	position: absolute;
+	&:after {
+		width: 24px;
+		height: 24px;
+		background: $color_rose_30_approx;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 100%;
+		position: absolute;
+		left: -7px;
+		top: -7px;
+		z-index: 9;
+		content: "";
+	}
+}
+.dot {
+	border: 10px solid $color_rose_40_approx;
+	background: transparent;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 60px;
+	height: 30px;
+	width: 30px;
+	animation: pulse 2s ease-out;
+	animation-iteration-count: infinite;
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	z-index: 1;
+	opacity: 0;
+}
+@-moz-keyframes pulse {
+ 0% {
+    -moz-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -moz-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -moz-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -moz-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+
+@-webkit-keyframes "pulse" {
+ 0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+ }
+ 25% {
+    -webkit-transform: scale(0);
+    opacity: 0.1;
+ }
+ 50% {
+    -webkit-transform: scale(0.1);
+    opacity: 0.3;
+ }
+ 75% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+ }
+ 100% {
+    -webkit-transform: scale(1);
+    opacity: 0.0;
+ }
+}
+.custom-zoom-wrapper-container {
+	width: 800px;
+	height: 50px;
+	background-color: none;
+	margin: 15px;
+}
+.custom-zoom-wrapper {
+	display: block;
+	float: right;
+	position: relative;
+}
+.custom-search-input {
+	height: 32px;
+	border: 1px solid $color_delta_approx;
+	border-right: none;
+	background: $color_masala_80_approx;
+	color: $white;
+	float: left;
+	margin-top: 1px;
+	padding: 0 7px;
+}
+.custom-share-location-button {
+	float: left;
+	margin-top: 1px;
+	width: 32px;
+	height: 32px;
+	border: 1px solid $color_delta_approx;
+	border-left: none;
+	background: $url_4 no-repeat center 0 $color_masala_80_approx;
+	margin-right: 7px;
+	font-size: 0;
+	cursor: pointer;
+}
+.custom-zoom-button {
+	width: 32px;
+	height: 32px;
+	border: 1px solid $color_delta_approx;
+	float: left;
+	font-size: 0;
+	cursor: pointer;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all ease-in-out 200ms;
+	&:hover {
+		background-color: $color_masala_approx;
+	}
+}
+.custom-zoom-in {
+	background: $url_4 no-repeat center -32px $color_masala_80_approx;
+}
+.custom-zoom-out {
+	margin-left: 7px;
+	background: $url_4 no-repeat center -64px $color_masala_80_approx;
+}
+.Enterph input {
+	display: block;
+	width: 90%;
+}
+.mapArea iframe {
+	height: 450px;
+	border-top: 1px solid $color_iron_approx;
+	border-bottom: 1px solid $color_iron_approx;
+}
+.socialIcon ul li {
+	list-style: none;
+	float: left;
+	padding: 0 10px;
+}
+.gm-style .labels {
+	overflow: visible !important;
+	opacity: 1 !important;
+}
+#phn {
+    width: 83%;
+}
